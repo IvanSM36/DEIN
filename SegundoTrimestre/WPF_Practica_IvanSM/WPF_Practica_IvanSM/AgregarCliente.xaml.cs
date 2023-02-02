@@ -19,7 +19,7 @@ namespace WPF_Practica_IvanSM
     /// </summary>
     public partial class AgregarCliente : Window
     {
-        List<Cliente> clientes= new List<Cliente>();
+        List<Cliente> clientes = new List<Cliente>();
         String dni;
         String nombre;
         int edad;
@@ -31,7 +31,7 @@ namespace WPF_Practica_IvanSM
 
         private void recogeDatos(Object sender, RoutedEventArgs e)
         {
-            
+
         }
 
         private void cerrarVentana(Object sender, RoutedEventArgs e)
