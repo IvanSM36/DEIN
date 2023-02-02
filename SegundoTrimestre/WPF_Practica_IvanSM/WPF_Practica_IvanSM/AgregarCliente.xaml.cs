@@ -20,6 +20,9 @@ namespace WPF_Practica_IvanSM
     public partial class AgregarCliente : Window
     {
 
+        // Creamos una lista de persona
+        List<Cliente> lc = new List<Cliente>();
+
         public AgregarCliente()
         {
             InitializeComponent();
@@ -27,6 +30,52 @@ namespace WPF_Practica_IvanSM
 
         /*
          * Metodo que cierra la ventana
+         * 
+         */
+        private void agregarCliente(Object sender, RoutedEventArgs e)
+        {        
+           
+            //Instanciamos la ventana MostrarClientes para pasar los datos al listView
+            MostrarClientes mC = new MostrarClientes();
+
+            //Recogemos los datos en variables
+            String dni = txtBoxDni.Text;
+            String nombre = txtBoxNombre.Text;
+            int edad = int.Parse(txtBoxEdad.Text);
+
+            // Compruebo si no existe el DNI
+            if (!existeDNI(dni, lc))
+            {
+                //Agrego un objeto con los datos recogidos de la ventana agregar cliente
+                lc.Add(new Cliente() { Dni = dni, Nombre = nombre, Edad = edad });
+
+                mC.listViewCliente.ItemsSource = lc;
+                MessageBox.Show("Se ha agregado el cliente correctamente");
+
+            }
+            else
+            {
+                MessageBox.Show("Ya existe un cliente con ese DNI");
+            }
+
+        }
+
+        private bool existeDNI(string dniABuscar, List<Cliente> lista)
+        {
+            foreach (var item in lista)
+            {
+                var c = item as Cliente;
+                if (c.Dni == dniABuscar)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+
+        /*
+         * Metodo que agrega un cliente al lIstView que esta en MostrarClientes
          * 
          */
         private void cerrarVentana(Object sender, RoutedEventArgs e)

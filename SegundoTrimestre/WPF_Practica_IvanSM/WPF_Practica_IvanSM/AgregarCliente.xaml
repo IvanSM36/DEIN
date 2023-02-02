@@ -55,7 +55,7 @@
         </Border>
 
         <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
-            <Button Height="40" Width="120" FontSize="20">Agregar</Button>
+            <Button Name="btnAgregar" Height="40" Width="120" FontSize="20" Click="agregarCliente">Agregar</Button>
             <Button Name="btnCancelar" Height="40" Width="120" FontSize="20" Margin="20 0 0 0" IsCancel="True" Click="cerrarVentana" >Cancelar</Button>
         </StackPanel>
  

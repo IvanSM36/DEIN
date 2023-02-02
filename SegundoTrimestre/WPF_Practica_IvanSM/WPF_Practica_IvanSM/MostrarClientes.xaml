@@ -71,7 +71,7 @@
                     </TextBox.Style>
                 </TextBox>
 
-                <ListView  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="33" Name="lisViewCliente" Margin="20 0 20 0">
+                <ListView  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="33" Name="listViewCliente" Margin="20 0 20 0">
                     <ListView.View >
                         <GridView>
                             

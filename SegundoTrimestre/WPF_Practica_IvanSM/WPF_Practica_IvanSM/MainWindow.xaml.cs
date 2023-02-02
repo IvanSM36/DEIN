@@ -14,6 +14,8 @@ using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
 
+using System.Collections.Generic;
+
 namespace WPF_Practica_IvanSM
 {
     /// <summary>
@@ -21,6 +23,7 @@ namespace WPF_Practica_IvanSM
     /// </summary>
     public partial class MainWindow : Window
     {
+        
 
         public MainWindow()
         {

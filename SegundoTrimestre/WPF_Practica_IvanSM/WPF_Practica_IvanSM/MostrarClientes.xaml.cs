@@ -19,28 +19,14 @@ namespace WPF_Practica_IvanSM
     /// </summary>
     public partial class MostrarClientes : Window
     {
-        // Creamos una lista de persona
-        List<Cliente> lc = new List<Cliente>();
-
+       
         public MostrarClientes()
         {
             InitializeComponent();
 
-            //Instanciamos la ventana AgregarCaliente para recoger los datos
-            AgregarCliente aC = new AgregarCliente();
-
-            String dni = aC.txtBoxDni.Text;
-            String nombre = aC.txtBoxNombre.Text;
-            int edad = int.Parse(aC.txtBoxEdad.Text);
-
-            //Agrego un objeto con los datos recogidos de la ventana agregar cliente
-            lc.Add(new Cliente() { Dni = dni, Nombre = nombre, Edad = edad });
-
-            lisViewCliente.ItemsSource = lc;
-
             // Filtra el listView con el contenido del textBox 
-            CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(lisViewCliente.ItemsSource);
-            view.Filter = filtroDni;
+           // CollectionView view = (CollectionView)CollectionViewSource.GetDefaultView(listViewCliente.ItemsSource);
+          //  view.Filter = filtroDni;
         }
 
         /* *
