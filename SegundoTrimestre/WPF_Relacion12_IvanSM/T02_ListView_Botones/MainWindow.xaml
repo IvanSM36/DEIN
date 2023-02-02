@@ -1,0 +1,52 @@
+﻿<Window x:Class="T02_ListView_Botones.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T02_ListView_Botones"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+   
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <ListView Name="lvTabla" Grid.ColumnSpan="2">
+            <ListView.View >
+                <GridView>
+                    <GridViewColumn Header="Nombre" Width="120" DisplayMemberBinding="{Binding Nombre}"/>
+                    <GridViewColumn Header="Apellidos" Width="150" DisplayMemberBinding="{Binding Apellidos}"/>
+
+                    <GridViewColumn Header="DNI" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Dni}" Foreground="Black"  FontWeight="Bold"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+
+                    <GridViewColumn Header="Email" Width="130">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Email}" Background="#FF965A5A"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Edad" Width="50" DisplayMemberBinding="{Binding Edad}"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button Height="30" Width="120" Grid.Column="0" Grid.Row="1" Click="ordenarApellidos">Ordernar por apellidos</Button>
+        <Button Height="30" Width="120" Grid.Column="1" Grid.Row="1" Click="ordenarEdad">Ordernar por edad</Button>
+
+
+    </Grid>
+</Window>

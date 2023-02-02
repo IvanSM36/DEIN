@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "T02_ListView_Botones/1.0.0": {
+        "runtime": {
+          "T02_ListView_Botones.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "T02_ListView_Botones/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

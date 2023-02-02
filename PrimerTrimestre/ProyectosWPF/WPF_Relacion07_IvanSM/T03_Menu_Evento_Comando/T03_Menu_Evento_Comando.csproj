@@ -1,0 +1,32 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\abrir.png" />
+    <None Remove="image\copiar.png" />
+    <None Remove="image\cortar.png" />
+    <None Remove="image\guardar.png" />
+    <None Remove="image\mas.png" />
+    <None Remove="image\nuevoDoc.png" />
+    <None Remove="image\pegar.png" />
+    <None Remove="image\salir.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\abrir.png" />
+    <Resource Include="image\copiar.png" />
+    <Resource Include="image\cortar.png" />
+    <Resource Include="image\guardar.png" />
+    <Resource Include="image\mas.png" />
+    <Resource Include="image\nuevoDoc.png" />
+    <Resource Include="image\pegar.png" />
+    <Resource Include="image\salir.png" />
+  </ItemGroup>
+
+</Project>

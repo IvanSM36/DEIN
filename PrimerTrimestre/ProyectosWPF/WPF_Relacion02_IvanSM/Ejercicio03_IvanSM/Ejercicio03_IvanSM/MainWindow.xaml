@@ -1,0 +1,14 @@
+﻿<Window x:Class="Ejercicio03_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio03_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TextBlock FontSize="40" TextWrapping="Wrap" Margin="30" >
+            <Span  FontStyle="Italic"> Se me puerta la cierra por que se me </Span> <Span  FontStyle="Oblique">  lengua la traba, todo me male sal,</Span><LineBreak/> <Span  FontStyle="Normal"> hijo fruta </Span>
+        </TextBlock>
+    </Grid>
+</Window>

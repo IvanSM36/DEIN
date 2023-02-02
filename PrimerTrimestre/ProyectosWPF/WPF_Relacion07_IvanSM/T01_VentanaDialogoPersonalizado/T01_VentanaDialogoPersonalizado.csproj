@@ -1,0 +1,25 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\correo.png" />
+    <None Remove="image\jungla.jpg" />
+    <None Remove="VentanaDialogoPersonalizada" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Include="VentanaDialogoPersonalizada" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\correo.png" />
+    <Resource Include="image\jungla.jpg" />
+  </ItemGroup>
+
+</Project>

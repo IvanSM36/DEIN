@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ejercicio04_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio04_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#F2B05E">
+    <Grid>
+        <TextBlock x:Name="txtBlockAmin" Margin="100,50,0,0" FontSize="14" HorizontalAlignment="Left" VerticalAlignment="Top" FontWeight="Bold">ADMINISTRACIÓN</TextBlock>
+        <TextBlock x:Name="txtEmpleados" Margin="0,50,120,0" FontSize="14" HorizontalAlignment="Right" VerticalAlignment="Top" FontWeight="Bold">EMPLEADOS</TextBlock>
+
+        <Button  x:Name="btnAlta" Margin="110,80,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Click="altaEmpleado">Alta Empleado</Button>
+        <Button  x:Name="btnHorasExtras" Margin="110,120,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Click="horasExtrasTotales" >Horas extras totales</Button>
+        <Button  x:Name="btnInforme" Margin="110,160,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="30" Width="110" Click="informeCompleto">Informe completo</Button>
+        <Button  x:Name="btnInsertarHora" Margin="0,80,110,0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="30" Width="110" Click="insertarHorasExtras">Insertar hora extra</Button>
+
+        <TextBox x:Name="txtBoxResultado" Margin="0,200,0,0" Height="200" Width="700" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" IsReadOnly="True"/>
+    </Grid>
+</Window>

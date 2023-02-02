@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "T02_ProgressBar_IvanSM/1.0.0": {
+        "runtime": {
+          "T02_ProgressBar_IvanSM.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "T02_ProgressBar_IvanSM/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

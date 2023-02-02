@@ -1,0 +1,53 @@
+﻿<Window x:Class="T03_ListView_Filtrar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T03_ListView_Filtrar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="350" Width="600">
+
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        
+        <StackPanel Orientation="Horizontal" Grid.Column="0" Grid.Row="0">
+            <Image Source="/image/buscar.png" Height="20" Width="20" Margin="20 0 0 0"/>
+            <TextBox Name="txtFiltro" Height="20" Width="200" Margin="10 0 0 0" HorizontalAlignment="Center" VerticalAlignment="Center" TextChanged="txtFilter_TextChanged" />
+        </StackPanel>
+
+        <Border Grid.Column="0" Grid.Row="1" BorderThickness="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="20" Opacity="0.5"/>
+            </Border.Effect>
+            <ListView Name="lvTabla" Padding="5">
+                <ListView.View>
+                    <GridView>
+                        <GridViewColumn Header="Nombre" Width="120" DisplayMemberBinding="{Binding Nombre}"/>
+                        <GridViewColumn Header="Apellidos" Width="150" DisplayMemberBinding="{Binding Apellidos}"/>
+
+                        <GridViewColumn Header="DNI" Width="100">
+                            <GridViewColumn.CellTemplate >
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Dni}" Foreground="Black"  FontWeight="Bold"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+
+                        <GridViewColumn Header="Email" Width="130">
+                            <GridViewColumn.CellTemplate>
+                                <DataTemplate>
+                                    <TextBlock Text="{Binding Email}" Background="#FFECABAB"/>
+                                </DataTemplate>
+                            </GridViewColumn.CellTemplate>
+                        </GridViewColumn>
+                        <GridViewColumn Header="Edad" Width="44" DisplayMemberBinding="{Binding Edad}"/>
+                    </GridView>
+                </ListView.View>
+            </ListView>
+        </Border>           
+    </Grid>
+</Window>

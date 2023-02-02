@@ -1,0 +1,47 @@
+﻿<Window x:Class="Ejercicio02_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio02_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="220" Width="300">
+    <StackPanel Margin="10">
+        <Label FontWeight="Bold" FontSize="15">¿Que fruta es amarilla?</Label>
+        <StackPanel Margin="20 5 20 0 ">
+            <Grid VerticalAlignment="Center" Background="#FFEFD4D4">
+            <RadioButton Margin="2" GroupName="fruta" Name="rbFresa" >
+                <WrapPanel HorizontalAlignment="Center">
+                    <Image Source="/images/fresa.png" Height="15" Width="15" />
+                    <TextBlock Margin="5 0 0 0 " Text="Fresa" Foreground="IndianRed"/>
+                </WrapPanel>
+            </RadioButton>
+            </Grid>
+            <Grid Background="#FF9E9E5F">
+            <RadioButton Margin="2" GroupName="fruta" Name="rbPlatano" FontSize="12">
+                <WrapPanel>
+                    <Image Source="/images/platano.png" Height="15" Width="15" />
+                    <TextBlock Margin="5 0 0 0 " Text="Platano" Foreground="Yellow"/>
+                </WrapPanel>
+            </RadioButton>
+            </Grid>
+            <Grid Background="#FFB5B5DE">
+                <RadioButton Margin="2" GroupName="fruta" Name="rbArandano" FontSize="12">
+                <WrapPanel>
+                    <Image Source="/images/arandanos.png" Height="15" Width="15" />
+                    <TextBlock Margin="5 0 0 0 " Text="Arandanos" Foreground="DodgerBlue"/>
+                </WrapPanel>
+            </RadioButton>
+            </Grid>
+            <Grid Background="#FFC6EFC6">
+            <RadioButton Margin="2" GroupName="fruta" Name="rbPera" FontSize="12">
+                <WrapPanel>
+                    <Image Source="/images/pera.png" Height="15" Width="15" />
+                    <TextBlock Margin="5 0 0 0 " Text="Pera" Foreground="ForestGreen"/>
+                </WrapPanel>
+            </RadioButton>
+            </Grid>
+        </StackPanel>
+        <Button Margin="20" Width="60" Click="comprobar">Corregir</Button>
+    </StackPanel>
+</Window>

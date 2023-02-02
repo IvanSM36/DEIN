@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="image\calculadora.png" />
+    <None Remove="image\ilusion.jpg" />
+    <None Remove="image\ilusion2.png" />
+    <None Remove="image\imagen.png" />
+    <None Remove="image\resultado.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="image\calculadora.png" />
+    <Resource Include="image\ilusion.jpg" />
+    <Resource Include="image\ilusion2.png" />
+    <Resource Include="image\imagen.png" />
+    <Resource Include="image\resultado.png" />
+  </ItemGroup>
+
+</Project>

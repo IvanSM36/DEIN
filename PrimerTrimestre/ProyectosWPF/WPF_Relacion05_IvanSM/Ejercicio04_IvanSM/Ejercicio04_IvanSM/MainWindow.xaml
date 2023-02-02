@@ -1,0 +1,35 @@
+﻿<Window x:Class="Ejercicio04_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio04_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="400">
+    <Grid>
+
+        <!--Especificamos 2 columnas
+            Height="*" ajustamos al tamaño de la ventana o restante
+        -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Label Content="_Nombre:" Target="{Binding ElementName=txtNombre}" FontSize="16"/>
+            <TextBox Name ="txtNombre" TabIndex="0" Height="30" Width="100" />
+            <Label FontSize="16" Content="_Direccion:" Target="{Binding ElementName=txtDireccion}"/>
+            <TextBox Name ="txtDireccion"  TabIndex="2" Height="30" Width="100" />
+
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="1">
+            <Label FontSize="16" Content="_Apellidos:" Target="{Binding ElementName=txtApellido}"/>
+            <TextBox Name ="txtApellido"  TabIndex="1" Height="30" Width="100" />
+            <Label FontSize="16" Content="_CodigoPostal:" Target="{Binding ElementName=txtCod}"/>
+            <TextBox Name ="txtCod" TabIndex="3" Height="30" Width="100" />
+        </StackPanel>
+
+    </Grid>
+</Window>

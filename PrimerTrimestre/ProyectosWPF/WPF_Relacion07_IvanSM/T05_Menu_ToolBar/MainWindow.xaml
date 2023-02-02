@@ -1,0 +1,143 @@
+﻿<Window x:Class="T05_Menu_ToolBar.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T05_Menu_ToolBar"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <!-- 
+        Creo un DockPanel donde dentro estará todos los elementos
+    -->
+    <DockPanel >
+        <!-- 
+            Primero Añadimos la barra menu
+        -->
+        <Menu DockPanel.Dock="Top" >
+            <MenuItem Header="_Archivo" FontSize="20">
+                <MenuItem Header="_Nuevo" Click="btnAbrirArchivo">
+                    <MenuItem.Icon>
+                        <Image Source="/image/nuevoDoc.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Guardar" Click="btnGuardarArchivo">
+                    <MenuItem.Icon>
+                        <Image Source="/image/guardar.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <Separator />
+
+                <MenuItem Header="_Salir" >
+                    <MenuItem.Icon>
+                        <Image Source="/image/salir.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+            </MenuItem>
+
+            <MenuItem Header="_Editar" FontSize="20">
+                <MenuItem Header="_Copiar" Command="ApplicationCommands.Copy">
+                    <MenuItem.Icon>
+                        <Image Source="/image/copiar.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+                <MenuItem Header="_Cortar" Command="ApplicationCommands.Cut">
+                    <MenuItem.Icon>
+                        <Image Source="/image/cortar.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+
+                <Separator/>
+
+                <MenuItem Header="_Pegar" Command="ApplicationCommands.Paste">
+                    <MenuItem.Icon>
+                        <Image Source="/image/pegar.png" />
+                    </MenuItem.Icon>
+                </MenuItem>
+            </MenuItem>
+        </Menu>
+        
+        <!--
+            Añadimos la barra de herramineta Toolbar
+        -->
+        <ToolBarTray DockPanel.Dock="Top" Background="#FF9D4E4E">
+            <ToolBar Background="#FF9D4E4E">
+                <Button ToolTip="Crea un nuevo documento" Command="New">
+                    <Image Source="/image/nuevoDoc.png" Height="20" Width="20"/>
+                </Button>
+                <Button ToolTip="Abre un documento" Command="Open" >
+                    <Image Source="/image/abrir.png" Height="20" Width="20"/>
+                </Button>
+                <Button Command="Save" >
+                    <Image Source="/image/guardar.png" Height="20" Width="20"/>
+                </Button>
+            </ToolBar>
+
+            <ToolBar Background="#FF9D4E4E">
+                <Button Command="Copy" ToolTip="Copia el texto seleccionado">
+                    <Image Source="/image/copiar.png" Height="20" Width="20"/>
+                </Button>
+                
+                <Button Command="Cut" ToolTip="Corta el texto seleccionado">
+                    <Image Source="/image/cortar.png" Height="20" Width="20"/>
+                </Button>
+
+                <Button Command="Paste" ToolTip="Pega el texto">
+                    <Image Source="/image/pegar.png" Height="20" Width="20"/>
+                </Button>
+                <Button Click="eventoMostrar" ToolTip="Muestra el texto seleccionado en una ventana">
+                    <Image Source="/image/mostrar.png" Height="20" Width="20"/>
+                </Button>
+            </ToolBar>
+        </ToolBarTray>
+        
+        <!--
+            Creo un grid donde estara el Textbox y el menu contextual
+        -->
+        <Grid>
+            <!-- 
+            Creo un textBox centrado y con el contenido centrado y un paddin de 30
+        -->
+            <TextBox HorizontalAlignment="Stretch" VerticalAlignment="Stretch" HorizontalContentAlignment="Center" VerticalContentAlignment="Top" FontSize="30" Padding="30" Name="txtEditor">"Haz click derecho para abrir el menu contextual"
+
+                <!--
+                Agregamos el Menu contextual
+                -->
+                <TextBox.ContextMenu>
+                    <ContextMenu>
+
+                        <MenuItem Header="_Copiar" Command="ApplicationCommands.Copy" >
+                            <MenuItem.Icon>
+                                <Image Source="/image/copiar.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header="_Cortar" Command="ApplicationCommands.Cut">
+                            <MenuItem.Icon>
+                                <Image Source="/image/cortar.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <MenuItem Header="_Pegar" Command="ApplicationCommands.Paste">
+                            <MenuItem.Icon>
+                                <Image Source="/image/pegar.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                        <Separator/>
+
+                        <MenuItem Header="_Mostrar" Click="eventoMostrar" >
+                            <MenuItem.Icon>
+                                <Image Source="/image/mostrar.png" />
+                            </MenuItem.Icon>
+                        </MenuItem>
+
+                    </ContextMenu>
+                </TextBox.ContextMenu>
+            </TextBox>
+        </Grid>
+    </DockPanel>
+
+</Window>

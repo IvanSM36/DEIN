@@ -1,0 +1,19 @@
+﻿<Window x:Class="Ejercicio01_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio01_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+
+        <TextBox Background="AliceBlue" Margin="381,107,278,279" />
+        <TextBox Background="AliceBlue" Margin="381,194,278,189"/>
+        <TextBlock Height="50" Width="130"  FontSize="20" VerticalAlignment="Top" Margin="246,106,424,0" ><Run Text="Nombre"/><Run Language="es-es" Text=":"/></TextBlock>
+        <TextBlock Height="50" Width="130" FontSize="20" VerticalAlignment="Top" Margin="246,195,424,0" >Apellidos:</TextBlock>
+
+        <Button ToolTip="Haz clic aquí para enviar los datos..." FontSize="20" Margin="327,295,325,78">Enviar</Button>
+
+    </Grid>
+</Window>

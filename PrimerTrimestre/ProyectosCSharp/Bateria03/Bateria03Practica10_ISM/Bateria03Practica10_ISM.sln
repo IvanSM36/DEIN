@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bateria03Practica10_ISM", "Bateria03Practica10_ISM\Bateria03Practica10_ISM.csproj", "{EC7EC686-CDDF-48DB-92EF-E6C8E46F4FA2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EC7EC686-CDDF-48DB-92EF-E6C8E46F4FA2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EC7EC686-CDDF-48DB-92EF-E6C8E46F4FA2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EC7EC686-CDDF-48DB-92EF-E6C8E46F4FA2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EC7EC686-CDDF-48DB-92EF-E6C8E46F4FA2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0E66D453-D422-4B2A-BDDB-DF632F31C67F}
+	EndGlobalSection
+EndGlobal

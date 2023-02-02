@@ -1,0 +1,60 @@
+﻿<Window x:Class="Ejercicio01_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio01_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/fondo.jpg"/>
+        </Grid.Background>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Border CornerRadius="10" BorderThickness="1">
+            <StackPanel Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" Margin="80,0,0,0">
+                <Image HorizontalAlignment="Center" VerticalAlignment="Center" Source="/image/nombre.png" Width="70"/>
+                <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="0" FontSize="50" Margin="20" Foreground="White"  Content="_Nombre:" Target="{Binding ElementName=txtNombre}"/>
+            </StackPanel>
+        </Border>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="0">
+            <TextBox TextAlignment="Center" VerticalContentAlignment="Center" Name="txtNombre" Height="50" Width="300" Foreground="White" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.3"/>
+                </TextBox.Background>
+            </TextBox>
+
+        </StackPanel>
+
+        <StackPanel  Orientation="Horizontal" Grid.Column="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="80 0 0 0 ">
+            <Image HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="1" Source="/image/email.png " Width="70"/>
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1" FontSize="50" Margin="20" Foreground="White"  Content="_Email:" Target="{Binding ElementName=txtEmail}"/>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="1" Grid.Row="1">
+            <TextBox TextAlignment="Center" VerticalContentAlignment="Center" Name="txtEmail" Height="50" Width="300" Foreground="White" FontSize="20">
+                <TextBox.Background>
+                    <SolidColorBrush Color="White" Opacity="0.3"/>
+                </TextBox.Background>
+            </TextBox>
+        </StackPanel>
+
+        <TextBox Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Column="0" Grid.Row="2" Height="100" Width="500" FontSize="20" Foreground="White" >
+            <TextBox.Background>
+                <SolidColorBrush Color="White" Opacity="0.2"/>
+            </TextBox.Background>
+        </TextBox>
+    </Grid>
+</Window>

@@ -1,0 +1,24 @@
+﻿<Window x:Class="Ejercicio01_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio01_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!-- 
+            Con keyDown hacemos que ejecute el evento pulsando la tecla enter
+            x:Name="txtBlockDNI" le damos un ID al item
+            Margin="50,50,0,0" indicamos la posicion del item
+            FontSize="24" tamaño de la letras
+            HorizontalAlignment="Left" especificamos la posicion horizontal
+            VerticalAlignment="Top" especificamos la posicion vertical 
+            IsReadOnly="True" Hace que el TxtBox solo sea lectura
+            TextWrapping="Wrap" agrega salto de linea para que no se salga del txtBox
+        -->
+        <TextBlock x:Name="txtBlockDNI" Margin="50,50,0,0" FontSize="24" HorizontalAlignment="Left" VerticalAlignment="Top" > Introduzca un DNI sin la letra:</TextBlock>
+        <TextBox x:Name="txtBoxDNI" Margin="0,50,50,0" Height="40" Width="300" FontSize="20" HorizontalAlignment="Right" VerticalAlignment="Top" KeyDown="mostrarLetraDNI"/>
+        <TextBox x:Name="txtBoxDNICompleto" Margin="50,135,50,50" Height="220" Width="684" FontSize="20" HorizontalAlignment="Left" VerticalAlignment="Top" TextWrapping="Wrap" IsReadOnly="True" />
+    </Grid>
+</Window>

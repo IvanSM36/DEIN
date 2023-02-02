@@ -1,0 +1,41 @@
+﻿<Window x:Class="Ejercicio04_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio04_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="400">
+    <Grid>
+        <Label HorizontalAlignment="Center" VerticalAlignment="Top" Margin="5,20,5,5" FontSize="20" FontWeight="Bold">Prestamo Bancario</Label>
+        <Grid  HorizontalAlignment="Center" VerticalAlignment="Center">
+            <GroupBox Height="240" Width="320">
+                <GroupBox.Header>
+                    <StackPanel Orientation="Horizontal">
+                        <Image Width="20" Margin="3,0" Source="/gamba.png" />
+                        <Label FontWeight="Bold">GroupBox Sample</Label>
+                    </StackPanel>
+                </GroupBox.Header>
+                <WrapPanel Background="CadetBlue" Height="220" Width="300" HorizontalAlignment="Center" VerticalAlignment="Center">
+                    <Label FontSize="20" FontWeight="DemiBold" Content="_Capital solicitada" Target="{Binding ElementName=txtBoxCapital}" Margin="2,7,0,0" />
+                    <TextBox x:Name="txtBoxCapital" FontSize="20" Height="30" Width="100" Margin="2,7,0,0"/>
+                    <Label FontSize="20" FontWeight="DemiBold" Content="Interes:" Target="{Binding ElementName=txtBoxInteres}" Margin="2,7,0,0" />
+                    <TextBox x:Name="txtBoxInteres" Height="30" Width="100" Margin="2,7,0,0"/>
+                    <Label FontSize="20" FontWeight="DemiBold" Content="Plazo en meses:" />
+                    <DockPanel>
+                        <TextBox x:Name="txtBoxPlazo" Text="{Binding ElementName=slValue, Path=Value,UpdateSourceTrigger=PropertyChanged}" DockPanel.Dock="Right" TextAlignment="Right" Height="20" Width="30" />
+                        <Slider IsSnapToTickEnabled="True" Name="slValue" TickFrequency="1" TickPlacement="BottomRight" Height="20" Width="100" Margin="2,7,0,0" Maximum="49"/>
+                    </DockPanel>
+                    <DatePicker Height="30" Width="150" Name="fecha" DisplayDate="2021-10-12" Margin="2,7,0,0">
+                        <DatePicker.BlackoutDates>
+                            <CalendarDateRange Start="2021-10-01" End="2021-10-05"/>
+                        </DatePicker.BlackoutDates>
+                    </DatePicker>
+                    <Label FontSize="20" FontWeight="DemiBold" Content="Cuotas resultantes:"/>
+                    <TextBlock x:Name="txtBoxResultado" FontSize="23" HorizontalAlignment="Center" VerticalAlignment="Center"><Run Text="0"/></TextBlock>
+                </WrapPanel>
+            </GroupBox>
+            <Button Height="40" Width="130" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,292,0,0" Click="calcular" >Calcular</Button>
+        </Grid>
+    </Grid>
+</Window>

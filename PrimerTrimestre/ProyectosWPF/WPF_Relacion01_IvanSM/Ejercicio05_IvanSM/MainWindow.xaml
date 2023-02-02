@@ -1,0 +1,30 @@
+﻿<!-->
+    Title: Nombre de la ventana
+    Height: Alto de la ventana
+    Width: Ancho de la ventana
+    Icon: ruta absoluta de la imagen para icono
+    ResizeMode: Usuario no puede cambiar el tamaño de la ventana
+    WindowState: Fija la ventana Maximizada o minimizada
+-->
+<Window x:Class="Ejercicio05_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio05_IvanSM"
+        mc:Ignorable="d"
+
+        Title="MainWindow"
+        Height="450"
+        Width="800"
+        Icon="D:\ProyectosVisualStudio\WPF_Relacion01_IvanSM\Ejercicio05_IvanSM\Ejercicio05_IvanSM\img\gamba.png"
+        ResizeMode="NoResize"
+        WindowState="Maximized">
+
+    <Grid Name="pnlMainGrid" Background="LightBlue">
+        <Button Click="msgAlerta"  Width="150" Height="50">
+            Boton
+        </Button>
+    </Grid>
+
+</Window>

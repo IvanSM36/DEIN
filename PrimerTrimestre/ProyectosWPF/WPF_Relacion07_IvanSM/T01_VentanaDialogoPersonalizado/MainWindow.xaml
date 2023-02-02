@@ -1,0 +1,113 @@
+﻿<Window x:Class="T01_VentanaDialogoPersonalizado.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T01_VentanaDialogoPersonalizado"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="400" Width="600">
+
+    <!--
+        Creo un grid para establecer el fondo de la ventana
+    -->
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/jungla.jpg"/>
+        </Grid.Background>
+       
+        <!--
+            Creo otro grid dentro pero antes establecemos un Border para indicar el fondo del Grid y los bordes redondos,
+            tambien le aplicaremos un sombra por los bordes.
+        -->
+        <Border BorderBrush="White" BorderThickness="3" CornerRadius="20" Height="300" Width="400">
+            <Border.Background>
+                <SolidColorBrush Color="#FF031204" Opacity="0.4"/>
+            </Border.Background>
+
+            <!--
+                Sombra en los bordes, se hereda a todo lo que tenga dentro del grid, de momento no se aplicarlo a una sola propiedad
+            -->
+            <Border.Effect>
+                <DropShadowEffect/>
+            </Border.Effect>
+
+            <!--
+                Indico el tamaño de las filas y las columnas del grid
+            -->
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Height="300" Width="400"  >
+                <Grid.ColumnDefinitions >
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="250"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+                
+                <!--
+                    Creo un textBlock como titulo
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10 0 0 0" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="0">
+                    <TextBlock Foreground="White" FontSize="30" TextDecorations="Underline">Registrar usuario</TextBlock>
+                </Grid>
+                
+                <!--
+                    Creo un Label como nombre
+                -->
+                <Grid HorizontalAlignment="Left" Margin="20 0 0 0" Grid.Column="0" Grid.Row="1">
+                    <Label FontSize="30" Foreground="White" Content="Nombre:"/>
+                </Grid>
+
+                <!--
+                    Creo un label como Apellidos
+                -->
+                <Grid HorizontalAlignment="Left" Margin="20 0 0 0"  Grid.Column="0" Grid.Row="2">
+                    <Label FontSize="30" Foreground="White" Content="Apellidos:"/>
+                </Grid>
+
+                <!--
+                    Creo un label como Email
+                -->
+                <Grid HorizontalAlignment="Left" VerticalAlignment="Center"  Margin="20 0 0 0" Grid.Column="0" Grid.Row="3">
+                    <Label FontSize="30" Foreground="White" Content="Email:" ></Label>
+                </Grid>
+
+                <!--
+                    Creo un textBox para Nombre
+                -->
+                <Grid HorizontalAlignment="Center"  VerticalAlignment="Center"  Grid.Column="1" Grid.Row="1">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" Height="40" Width="200" FontSize="20"></TextBox>
+                </Grid>
+
+                <!--
+                    Creo un textBox para Apellidos
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="2">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5"  Height="40" Width="200" FontSize="20"></TextBox>
+                </Grid>
+
+                <!--
+                    Creo un textBox para Email
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center"  Grid.Column="1" Grid.Row="3">
+                    <TextBox HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5" Name="txtEmail" Height="40" Width="200" IsEnabled="False" Background="White" FontSize="20"></TextBox>
+                </Grid>
+
+                <!--
+                    Creo un boton que llamara a una nueva ventana donde introduciremos el email y lo añadira al txtBox Email
+                -->
+                <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.ColumnSpan="2" Grid.Column="0" Grid.Row="4">
+                    <Button Height="40" Width="200" FontSize="20" Margin="20" Click="aniadirEmail" Content="Introducir Email" ClipToBounds="True"/>
+                </Grid>
+
+            </Grid>
+            
+        </Border>
+
+    </Grid>
+
+</Window>

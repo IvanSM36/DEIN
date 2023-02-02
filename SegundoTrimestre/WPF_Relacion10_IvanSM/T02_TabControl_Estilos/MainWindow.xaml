@@ -1,0 +1,155 @@
+﻿<Window x:Class="T02_TabControl_Estilos.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:T02_TabControl_Estilos"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+   
+    <!--
+        Creo un Grid donde introduciremos todo
+    -->
+    <Grid>
+        <TabControl TabStripPlacement="Left" Name="Pestanias">
+            <!--
+                Espacificamos el estilo de los TabItem>
+            -->
+            <TabControl.Resources>
+                <Style TargetType="TabItem">
+                    <Setter Property="Template">
+                        <Setter.Value>
+                            <ControlTemplate TargetType="TabItem">
+                                <Border Name="Border" BorderThickness="3,3,3,3" BorderBrush="#FF00AD52" CornerRadius="20,00,0,20" Margin="1">
+                                    <ContentPresenter Name="ContentSite" VerticalAlignment="Center" HorizontalAlignment="Center" ContentSource="Header" Margin="10"/>
+                                </Border>
+                                <ControlTemplate.Triggers>
+                                    <Trigger Property="IsSelected" Value="True">
+                                        <Setter TargetName="Border" Property="Background" Value="#FF82AD97" />
+                                    </Trigger>
+                                    <Trigger Property="IsSelected" Value="False">
+                                        <Setter TargetName="Border" Property="Background" Value="GhostWhite" />
+                                    </Trigger>
+                                </ControlTemplate.Triggers>
+                            </ControlTemplate>
+                        </Setter.Value>
+                    </Setter>
+                </Style>
+                <!--
+                    Cambio el color de todos los Grids
+                -->
+                <Style TargetType="Grid">
+                    <Setter Property="Grid.Background" Value="#FF93FFC6" />
+                </Style>
+            </TabControl.Resources>
+            
+            
+            <!--
+                Añadimos los elementos
+            -->
+            <TabItem Name="Valores" ToolTip="Introduce 2 valores numericos">
+                <TabItem.Header>
+                    <Image Source="/image/calculadora.png" Height="50" Width="50" />
+                </TabItem.Header>
+               
+                <!--
+                    Creo un grid para que aplique el color del stilo a toda la ventana
+                -->
+                <Grid>
+                    <!--
+                    Creo un grid y espedifico el tamaño de filas y columnas para posicionar y ordenar el contenido de la pestaña tambien aplicaria el mismo color verde ya que se
+                -->
+                    <Grid HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!--
+                            Introducimos los elementos y le damos una posicion en el grid
+                        -->
+                        <Label Grid.Column="0" Grid.Row="0" Content="Introduzca un valor numerico: " FontSize="20"  />
+                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxNum01" Grid.Column="1" Grid.Row="0" Height="50" Width="200" FontSize="20"/>
+
+                        <Label Grid.Column="0" Grid.Row="1" Content="Introduzca el segundo valor numerico: " FontSize="20" />
+                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Grid.Column="1" Grid.Row="1" Name="txtBoxNum02" Height="50" Width="200" FontSize="20"/>
+
+                    </Grid>
+                </Grid>
+                
+            </TabItem>
+
+            <!--
+                Pesaña Calcular 
+            -->
+            <TabItem MouseLeftButtonUp="calcular" ToolTip="Calcula la multiplicacion de los valores numericos anteriores">
+                <TabItem.Header>
+                    <Image Source="/image/resultado.png" Height="50" Width="50"/>
+                </TabItem.Header>
+
+                <!--
+                    Creo un grid para que aplique el color del stilo a toda la ventana
+                -->
+                <Grid>
+                    <!--
+                        Creamos un stackPanel para posicionar los elementos
+                    -->
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
+                        <Label Content="Resultado: " HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" />
+                        <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtBoxResultado" Height="50" Width="100" IsEnabled="False" />
+                    </StackPanel>
+                </Grid>
+                
+            </TabItem>
+
+            <!--
+                Pestaña imagenes
+            -->
+            <TabItem ToolTip="Texto con imagenes">
+                <TabItem.Header>
+                    <Image Source="/image/imagen.png" Height="50" Width="50" />
+                </TabItem.Header>
+
+                <!--
+                    Creo un grid para que aplique el color del stilo a toda la ventana
+                -->
+                <Grid>
+                    <!--
+                        Creo un grid y espedifico el tamaño de filas y columnas para posicionar y ordenar el contenido de la pestaña
+                    -->
+                    <Grid HorizontalAlignment="Stretch" VerticalAlignment="Stretch" >
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="*"/>
+                        </Grid.ColumnDefinitions>
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+
+                        <!--
+                            Introducimos los elementos y le damos una posicion en el grid
+                        -->
+                        <TextBlock TextWrapping="WrapWithOverflow" Grid.RowSpan="2" FontSize="20" Padding="20"> Las siguientes imagenes causan ilusion optica una de ellas parece estar en movimiento,
+                            la otra imagen se debe mantener la mirada unos 30seg sin parpadear, una vez pasado esos segundos cierra los ojos y veras un circulo con el color magenta. Esta colunuma esta fusionada con un ColumSpan. 
+                            Esto es un texto de relleno. Esto es un texto de relleno. Esto es un texto de relleno Esto es un texto de relleno con las filas fusionadas con RowSpan2.
+                        </TextBlock>
+                                              
+                        <Image Grid.Column="1" Grid.Row="0" Source="/image/ilusion2.png"></Image>
+        
+                        <Image Grid.Column="1" Grid.Row="1" Source="/image/ilusion.jpg"></Image>
+
+                    </Grid>
+                </Grid>
+                
+            </TabItem>
+        </TabControl>
+
+    </Grid>
+</Window>

@@ -1,0 +1,44 @@
+﻿<Window x:Class="Ejercicio04_IvanSM.AltaEmpleado"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio04_IvanSM"
+        mc:Ignorable="d"
+        Title="AltaEmpleado" Height="300" Width="500">
+    <Grid Background="Orange">
+
+        <!--Especificamos 2 columnas
+            Height="*" ajustamos al tamaño de la ventana o restante
+        -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Especificamos 2 filas-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Label FontSize="16">Introduzca nombre:</Label>
+            <Label FontSize="16">Introduzca salario:</Label>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="1">
+            <TextBox  x:Name="txtBlockNombre" Height="30" Width="100" />
+            <TextBox x:Name="txtBlockSalario" Height="30" Width="100" />
+        </StackPanel>
+
+        <!--
+            Grid.Row: indica la posicion de la fila
+            Grid.Column: Indica la posicion de la columna
+            IsCancel: hace que el boton candelar cierre la ventana
+        -->
+        <Button Height="30" Width="100" Grid.Row="1" HorizontalAlignment="Right" VerticalAlignment="Top" Click="alta" Margin="0,45,10,0">Alta</Button>
+        <Button Height="30" Width="100"  Grid.Row="1" Grid.Column="1" IsCancel="True" HorizontalAlignment="Center" VerticalAlignment="Top"  Margin="0,45,0,0" >Cancelar</Button>
+
+    </Grid>
+</Window>

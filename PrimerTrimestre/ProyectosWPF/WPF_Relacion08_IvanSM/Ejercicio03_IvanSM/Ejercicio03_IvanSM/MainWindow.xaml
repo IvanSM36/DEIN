@@ -1,0 +1,20 @@
+﻿<Window x:Class="Ejercicio03_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio03_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Background="#84BFAA">
+    <Grid>
+        
+        <Button  x:Name="btnNewTarea" Margin="60,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="120" Click="agregarTarea" >Agregar nueva tarea</Button>
+        <Button  x:Name="btnMostrarSig" Margin="208,50,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Height="40" Width="110" Click="mostrarSiguiente">Mostrar siguiente</Button>
+        <Button  x:Name="btnRealizaSig" Margin="0,50,0,0" HorizontalAlignment="Center" VerticalAlignment="Top" Height="40" Width="110" Click="realizarSiguiente">Realizar siguiente</Button>
+        <Button  x:Name="btnMostrarNumero" Margin="300,50,0,0" HorizontalAlignment="center" VerticalAlignment="Top" Height="40" Width="110" Click="numeroTareas">Mostrar nº tareas</Button>
+        <Button  x:Name="btnMostrarPen" Margin="0,50,60,0" HorizontalAlignment="Right" VerticalAlignment="Top" Height="40" Width="110" Click="tareasPendientes">Mostrar pendiente</Button>
+        
+        <TextBox x:Name="txtBoxResultado" Margin="0,120,0,0" Height="250" Width="700" FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Top" TextAlignment="Center" />
+
+    </Grid>
+</Window>

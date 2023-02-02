@@ -1,0 +1,42 @@
+﻿<Window x:Class="Ejercicio03_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Ejercicio03_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="250" Width="360">
+    <Grid Background="#FFDEF1BD">
+
+        <!--Especificamos 2 columnas
+            Height="*" ajustamos al tamaño de la ventana o restante
+        -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="150"/>
+        </Grid.ColumnDefinitions>
+
+        <!--Especificamos 2 filas-->
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="100"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel  HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10">
+            <Label FontSize="16">Introduzca usuario:</Label>
+            <Label FontSize="16">Introduzca contraseña:</Label>
+        </StackPanel>
+
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" Margin="10" Grid.Column="1">
+            <TextBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Name="txtUser" Height="30" Width="100" />
+            <PasswordBox HorizontalContentAlignment="Center" VerticalContentAlignment="Center" MaxLength="8" PasswordChar="X" Name="passBoxUser" Height="30" Width="100" />
+        </StackPanel>
+
+        <!--
+            Grid.Row: indica la posicion de la fila
+            Grid.Column: Indica la posicion de la columna
+            Grid.ColumnSpan: Fusiona las columnas indicadas
+        -->
+        <Button Height="30" Width="100" Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Click="iniciarSesion"> Iniciar Sesion</Button>
+    </Grid>
+</Window>
