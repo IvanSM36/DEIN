@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Github\DEIN\SegundoTrimestre\WPF_Practica_IvanSM\WPF_Practica_IvanSM\obj\Debug\net6.0-windows\
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\WPF_Practica_IvanSM\WPF_Practica_IvanSM\obj\Debug\net6.0-windows\
 WPF_Practica_IvanSM
 none
 false
 TRACE;DEBUG;NET;NET6_0;NETCOREAPP
-D:\Github\DEIN\SegundoTrimestre\WPF_Practica_IvanSM\WPF_Practica_IvanSM\App.xaml
-21808860584
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\WPF_Practica_IvanSM\WPF_Practica_IvanSM\App.xaml
+4-325882180
 
-5-1579021639
+7-1889640955
 194237474483
-AgregarCliente.xaml;MainWindow.xaml;
+AgregarCliente.xaml;BuscarCliente.xaml;MainWindow.xaml;MostrarClientes.xaml;
 
-True
+False
 

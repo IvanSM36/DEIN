@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <None Remove="fuente.jpg" />
-    <None Remove="image\fuente.jpg" />
   </ItemGroup>
 
   <ItemGroup>

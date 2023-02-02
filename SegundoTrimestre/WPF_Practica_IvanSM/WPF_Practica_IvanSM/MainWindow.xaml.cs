@@ -21,11 +21,16 @@ namespace WPF_Practica_IvanSM
     /// </summary>
     public partial class MainWindow : Window
     {
+
         public MainWindow()
         {
             InitializeComponent();
+
         }
 
+        /*
+        * Metodo que abre la ventana Agregar cliente
+        */
         private void agregarCliente(Object sender, RoutedEventArgs e)
         {
             AgregarCliente ac = new AgregarCliente();
@@ -33,18 +38,64 @@ namespace WPF_Practica_IvanSM
             ac.Show();
         }
 
-       /* private void agregar(Object sender, RoutedEventArgs e)
+        /*
+         * Metodo que abre la ventana buscar cliente
+         */
+        private void buscarCliente(Object sender, RoutedEventArgs e)
         {
-            // paso a variables los datos de los txtBox
-            dni = txtBoxDni.Text;
-            nombre = txtBoxNombre.Text;
-            edad = int.Parse(txtBoxEdad.Text);
+            BuscarCliente bc = new BuscarCliente();
 
-            // Creo un objeto con los datos de los campos 
-            Cliente c = new Cliente(dni, nombre, edad);
+            bc.Show();
+        }
 
-            // Agrego objeto a la lista de objetos
-            clientes.Add(c);
-        }*/
+        /*
+         * Metodo que abre la ventana buscar cliente
+         */
+        private void listarClientes(Object sender, RoutedEventArgs e)
+        {
+            MostrarClientes mc = new MostrarClientes();
+
+            mc.Show();
+        }
+
+        /* *
+       *  Metodo para salir (Solo muestra un messageBox)
+       */
+        private void archivoSalir(Object sende, RoutedEventArgs e)
+        {
+            MessageBox.Show("Salir archivo.", "Salir");
+        }
+
+        /* *
+       *  Metodo para compartir en instragram (Solo muestra un messageBox)
+       */
+        private void compartirInstagram(Object sende, RoutedEventArgs e)
+        {
+            MessageBox.Show("Compartir en Instagram.", "Compartir instagram");
+        }
+
+        /* *
+        *  Metodo para compartir en facebook (Solo muestra un messageBox)
+        */
+        private void compartirFacebook(Object sende, RoutedEventArgs e)
+        {
+            MessageBox.Show("Compartir en Facebook.", "Compartir facebook");
+        }
+
+        /* *
+        *  Metodo para compartir en twitter (Solo muestra un messageBox)
+        */
+        private void compartirTwitter(Object sende, RoutedEventArgs e)
+        {
+            MessageBox.Show("Compartir en Twitter.", "Compartir twitter");
+        }
+
+        /* *
+       *  Metodo para compartir en otros (Solo muestra un messageBox)
+       */
+        private void compartirOtros(Object sende, RoutedEventArgs e)
+        {
+            MessageBox.Show("Compartir en Otros.", "Compartir en");
+        }
     }
 }

@@ -1,0 +1,103 @@
+﻿<Window x:Class="WPF_Practica_IvanSM.MostrarClientes"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_Practica_IvanSM"
+        mc:Ignorable="d"
+        Title="MostrarClientes" Height="500" Width="500">
+
+    <Grid Background="#FF96BFBF">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 20 0 0" Height="50" Width="400" BorderBrush="Black" Background="#FF222933" BorderThickness="1"  CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Direction="300"/>
+            </Border.Effect>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <TextBlock Foreground="White" FontWeight="Bold" TextDecorations="Underline" FontSize="40" FontFamily="Brush Script MT">Hotel Spirit</TextBlock>
+            </StackPanel>
+        </Border>
+
+        <Border Grid.Row="1" Background="#FF222933" BorderBrush="Black" Margin="40" CornerRadius="20" BorderThickness="1">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10"/>
+            </Border.Effect>
+            <Grid Height="210" Width="400" HorizontalAlignment="Center" VerticalAlignment="Center">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*"/>
+                    <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
+
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="60" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                    <RowDefinition Height="50" />
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Column="0" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" FontSize="25" Foreground="White" Margin="20 0 0 0 " >Lista de clientes:</TextBlock>
+                <!--
+                    Aplico un style para poder simular un Hint
+                -->
+                <TextBox Name="txtFiltro" Grid.Column="1" Grid.Row="0" Height="30" Width="150" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Margin="25,15,25,0" VerticalAlignment="Top">
+                    <TextBox.Style>
+                        <Style TargetType="TextBox">
+                            <Setter Property="Template">
+                                <Setter.Value>
+                                    <ControlTemplate TargetType="TextBox" >
+                                        <Grid>
+                                            <Label x:Name="watermark" Background="White" Content="Filtrar por DNI" Foreground="Gray" IsHitTestVisible="False" />
+                                            <ScrollViewer x:Name="PART_ContentHost">
+                                            </ScrollViewer>
+                                        </Grid>
+                                        <ControlTemplate.Triggers>
+                                            <Trigger Property="IsKeyboardFocusWithin" Value="True">
+                                                <Setter TargetName="watermark" Property="Content" Value=""/>
+                                            </Trigger>
+                                            <Trigger Property="Text" Value="">
+                                                <Setter TargetName="watermark" Property="Content" Value="Filtrar por DNI"/>
+                                            </Trigger>
+                                        </ControlTemplate.Triggers>
+                                    </ControlTemplate>
+                                </Setter.Value>
+                            </Setter>
+                        </Style>
+                    </TextBox.Style>
+                </TextBox>
+
+                <ListView  Grid.Column="0" Grid.Row="1" Grid.ColumnSpan="2" Grid.RowSpan="33" Name="lisViewCliente" Margin="20 0 20 0">
+                    <ListView.View >
+                        <GridView>
+                            
+                            <GridViewColumn Header="DNI" Width="150">
+                                <GridViewColumn.CellTemplate >
+                                    <DataTemplate>
+                                        <TextBlock Text="{Binding Dni}" Foreground="Black"  FontWeight="Bold"/>
+                                    </DataTemplate>
+                                </GridViewColumn.CellTemplate>
+                            </GridViewColumn>
+
+                            <GridViewColumn Header="Nombre" Width="150" DisplayMemberBinding="{Binding Nombre}"/>
+
+                            <GridViewColumn Header="Edad" Width="50" DisplayMemberBinding="{Binding Edad}"/>
+                        </GridView>
+                    </ListView.View>
+                </ListView>
+                
+            </Grid>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button Height="40" Width="120" FontSize="20">Agregar</Button>
+            <Button Name="btnCancelar" Height="40" Width="120" FontSize="20" Margin="20 0 0 0" IsCancel="True" Click="cerrarVentana" >Cancelar</Button>
+        </StackPanel>
+
+    </Grid>
+
+</Window>

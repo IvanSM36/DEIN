@@ -13,12 +13,96 @@
         </Grid.Background>
 
         <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
             <RowDefinition Height="80"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="60"/>
         </Grid.RowDefinitions>
 
-        <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0" Height="50" Width="400" BorderBrush="Black" Background="#FF222933" BorderThickness="1"  CornerRadius="10">
+        <!--
+        Creamos un DockPanel para la barra del menu
+        -->
+        <DockPanel Grid.Row="0">
+            <!--
+            Establecemos la posicion del menu y el tamaño de letra
+            -->
+            <Menu DockPanel.Dock="Top" FontSize="20" >
+
+                <!--
+                Creamos los items del menu
+                -->
+                <MenuItem Header="_Archivo">
+                    <!--
+                    Creamos los subItems del menu
+                    -->
+                    <MenuItem Header="_Agregar cliente" Click="agregarCliente">
+                        <MenuItem.Icon>
+                            <Image Source="/image/agregar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Buscar" Click="buscarCliente">
+                        <MenuItem.Icon>
+                            <Image Source="/image/lupa.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Ver clientes" >
+                        <MenuItem.Icon>
+                            <Image Source="/image/mostrar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <Separator/>
+
+                    <MenuItem Header="_Salir" Click="archivoSalir">
+                        <MenuItem.Icon>
+                            <Image Source="/image/salir.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </MenuItem>
+
+                <!--
+                Creamos otro item
+                -->
+                <MenuItem Header="_Compartir">
+
+                    <MenuItem Header="_Instagram" Click="compartirInstagram">
+                        <MenuItem.Icon>
+                            <Image Source="/image/instagram.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Facebook" Click="compartirFacebook">
+                        <MenuItem.Icon>
+                            <Image Source="/image/facebook.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Twitter" Click="compartirTwitter">
+                        <MenuItem.Icon>
+                            <Image Source="/image/twitter.png"/>
+                        </MenuItem.Icon>
+
+                    </MenuItem>
+
+                    <Separator/>
+
+                    <MenuItem Header="_Otros..." Click="compartirOtros">
+                        <MenuItem.Icon>
+                            <Image Source="/image/mas.png" />
+                        </MenuItem.Icon>
+
+                    </MenuItem>
+
+                </MenuItem>
+
+            </Menu>
+        </DockPanel>
+
+
+        <Border Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0" Height="50" Width="400" BorderBrush="Black" Background="#FF222933" BorderThickness="1"  CornerRadius="10">
             <Border.Effect>
                 <DropShadowEffect BlurRadius="10" Direction="300"/>
             </Border.Effect>
@@ -30,13 +114,14 @@
         </Border>
         
 
-        <Border Grid.Row="2" VerticalAlignment="Bottom" Height="60" Width="450" Background="#99000000" BorderBrush="White" BorderThickness="1 1 1 0" CornerRadius="20 20 0 0">
+        <Border Grid.Row="3" VerticalAlignment="Bottom" Height="60" Width="450" Background="#99000000" BorderBrush="White" BorderThickness="1 1 1 0" CornerRadius="20 20 0 0">
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" VerticalAlignment="Center">
                 
                 <Button Height="35" Width="120" FontSize="15" Margin="5" Click="agregarCliente">Añadir cliente</Button>
-                <Button Height="35" Width="120" FontSize="15" Margin="5">Buscar</Button>
-                <Button Height="35" Width="120" FontSize="15" Margin="5">Mostrar Todo</Button>
-
+                <Button Height="35" Width="120" FontSize="15" Margin="5" Click="buscarCliente">Buscar</Button>
+                <Button Height="35" Width="120" FontSize="15" Margin="5" Click="listarClientes">Lista</Button>
+                
+                
             </StackPanel>
         </Border>
 
