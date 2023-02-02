@@ -24,6 +24,8 @@ namespace WPF_Practica_IvanSM
         {
             InitializeComponent();
         }
+        /// Furula o no?
+
 
         /*
          * Metodo que cierra la ventana
