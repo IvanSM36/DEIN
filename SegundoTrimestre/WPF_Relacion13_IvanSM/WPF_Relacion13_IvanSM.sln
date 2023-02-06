@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ConexionDB_IvanSM", "WPF_ConexionDB_IvanSM\WPF_ConexionDB_IvanSM.csproj", "{C8208C9A-793A-430C-9ECB-3E4159DDEB49}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPF_ConectarDB", "WPF_ConectarDB\WPF_ConectarDB.csproj", "{930E9FAE-3FD4-4AF1-A569-75A107CEAD91}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C8208C9A-793A-430C-9ECB-3E4159DDEB49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C8208C9A-793A-430C-9ECB-3E4159DDEB49}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C8208C9A-793A-430C-9ECB-3E4159DDEB49}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C8208C9A-793A-430C-9ECB-3E4159DDEB49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{930E9FAE-3FD4-4AF1-A569-75A107CEAD91}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{930E9FAE-3FD4-4AF1-A569-75A107CEAD91}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{930E9FAE-3FD4-4AF1-A569-75A107CEAD91}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{930E9FAE-3FD4-4AF1-A569-75A107CEAD91}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {BBB87CC2-4616-400A-9EEF-83A9297B4A63}
+		SolutionGuid = {B85B81E5-DB13-423A-87AA-D7A03024C7CC}
 	EndGlobalSection
 EndGlobal
