@@ -1,7 +1,9 @@
 ﻿using System;
-using MySql.Data.MySqlClient;
+//using MySql.Data.MySqlClient;
 using System.Windows;
 using System.Data;
+using MySqlConnector;
+
 namespace InsertaDatos
 {
     class AdminDB
@@ -16,6 +18,30 @@ namespace InsertaDatos
         static MySqlCommand Comando = new MySqlCommand();
         static MySqlDataAdapter Adaptador = new MySqlDataAdapter();
         public DataSet dsAnimales = new DataSet();
+
+        public void Conectar()
+        {
+            try
+            {
+                con.ConnectionString = CadenaDeConexion;
+                con.Open();
+                MessageBox.Show("La BD esta ahora conectada");
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Ocurrio un error al conectar a la BD");
+                throw;
+            }
+        }
+
+
+
+        public static void Desconectar()
+        {
+            con.Close();
+        }
+
+
         public void llenarDatosUsuarios()
         {
             //Todos los datos capturados en la tabla alumnos
@@ -24,7 +50,7 @@ namespace InsertaDatos
                 con.ConnectionString = CadenaDeConexion;
                 con.Open();
                 dsAnimales.Clear();
-                string qry = "SELECT * FROM usuarios";
+                string qry = "SELECT * FROM Animales";
                 cmd.CommandText = qry;
                 cmd.Connection = con;
                 Adaptador.SelectCommand = cmd;
