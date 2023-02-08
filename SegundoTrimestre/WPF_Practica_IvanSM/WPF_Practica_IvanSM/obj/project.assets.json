@@ -8,23 +8,23 @@
     "net6.0-windows7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\FPDAM\\.nuget\\packages\\": {},
+    "C:\\Users\\IvanSM\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\FPGS\\GitHub\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM.csproj",
+      "projectUniqueName": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM.csproj",
       "projectName": "WPF_Practica_IvanSM",
-      "projectPath": "I:\\FPGS\\GitHub\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM.csproj",
-      "packagesPath": "C:\\Users\\FPDAM\\.nuget\\packages\\",
-      "outputPath": "I:\\FPGS\\GitHub\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\obj\\",
+      "projectPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM.csproj",
+      "packagesPath": "C:\\Users\\IvanSM\\.nuget\\packages\\",
+      "outputPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Practica_IvanSM\\WPF_Practica_IvanSM\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\FPDAM\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\IvanSM\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

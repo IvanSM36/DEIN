@@ -1,4 +1,5 @@
-﻿using System;
+﻿using MySqlX.XDevAPI.Relational;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -29,6 +30,17 @@ namespace WPF_InsertarDatos
             gridDatos.ItemsSource = null;
             db.llenarDatos();
             gridDatos.ItemsSource = db.dsAnimales.Tables["animales"].DefaultView;
+            
         }
+
+        /*
+         * Metodo que cierra la ventana
+         *
+         */
+        private void cerrarVentana(Object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
     }
 }

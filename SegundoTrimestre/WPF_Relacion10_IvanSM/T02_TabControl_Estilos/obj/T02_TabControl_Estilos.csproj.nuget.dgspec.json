@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj": {}
+    "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj": {}
   },
   "projects": {
-    "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj": {
+    "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj",
+        "projectUniqueName": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj",
         "projectName": "T02_TabControl_Estilos",
-        "projectPath": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj",
+        "projectPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\T02_TabControl_Estilos.csproj",
         "packagesPath": "C:\\Users\\IvanSM\\.nuget\\packages\\",
-        "outputPath": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\obj\\",
+        "outputPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion10_IvanSM\\T02_TabControl_Estilos\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

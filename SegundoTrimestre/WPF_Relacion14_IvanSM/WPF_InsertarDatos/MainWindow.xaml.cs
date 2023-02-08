@@ -31,7 +31,8 @@ namespace WPF_InsertarDatos
         {
             db.Conectar();
             txtBlockEstadoBD.Text = "Online";
-            db.desconectar();
+
+            db.Desconectar();
         }
 
 
@@ -41,5 +42,12 @@ namespace WPF_InsertarDatos
             frmDatos.WindowStartupLocation = System.Windows.WindowStartupLocation.CenterScreen;
             frmDatos.Show();
         }
+
+        private void btnInsertarDatos(object sender, RoutedEventArgs e)
+        {
+            InsertarDatos insertarDatos= new InsertarDatos();
+            insertarDatos.Show();
+        }
+
     }
 }

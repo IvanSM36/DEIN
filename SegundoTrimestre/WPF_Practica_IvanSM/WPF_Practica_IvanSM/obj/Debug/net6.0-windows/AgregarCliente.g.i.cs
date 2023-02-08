@@ -93,7 +93,7 @@ namespace WPF_Practica_IvanSM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;component/agregarcliente.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;V1.0.0.0;component/agregarcliente.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\AgregarCliente.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

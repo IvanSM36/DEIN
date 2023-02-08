@@ -15,6 +15,8 @@
             
             <Button Height="50" Width="200" FontSize="25" Click="Button_Click" Content="Conectar" />
             <Button Height="50" Width="200" FontSize="25" Click="btnConsulta_Click"  Content="Ver datos"  Margin="20"/>
+            <Button Height="50" Width="200" FontSize="25" Click="btnInsertarDatos"  Content="Insertar datos" />
+
         </StackPanel>
     </Grid>
 </Window>

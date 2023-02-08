@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using MySqlConnector;
+using System.Windows.Controls;
 
 namespace WPF_InsertarDatos
 {
@@ -41,7 +42,7 @@ namespace WPF_InsertarDatos
 
 
 
-        public void desconectar()
+        public void Desconectar()
         {
             con.Close();
         }
@@ -59,7 +60,7 @@ namespace WPF_InsertarDatos
                 cmd.CommandText = qry;
                 cmd.Connection = con;
                 Adaptador.SelectCommand = cmd;
-                Adaptador.Fill(dsAnimales, "animales");
+                Adaptador.Fill(dsAnimales, "animales");          
                 con.Close();
             }
             catch (Exception ex)
@@ -67,5 +68,14 @@ namespace WPF_InsertarDatos
                 MessageBox.Show(ex.ToString());
             }
         }
+
+        public void insertaDatos(String nombre, String especie, String raza, char sexo)
+        {
+            string strSQL = "INSERT INTO animales(nombre, especie, raza, sexo) VALUES ('" + nombre + "','" + especie + "', '" + raza + "', '" + sexo + "');";
+            cmd.CommandText = strSQL;
+            cmd.Connection = con;
+            cmd.ExecuteNonQuery();
+        }
+
     }
 }

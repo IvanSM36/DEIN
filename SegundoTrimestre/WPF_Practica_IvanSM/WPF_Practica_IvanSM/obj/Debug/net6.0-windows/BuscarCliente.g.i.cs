@@ -69,7 +69,7 @@ namespace WPF_Practica_IvanSM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;component/buscarcliente.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;V1.0.0.0;component/buscarcliente.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\BuscarCliente.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

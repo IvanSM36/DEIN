@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\T03_ListView_Filtrar.csproj",
+      "projectUniqueName": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\T03_ListView_Filtrar.csproj",
       "projectName": "T03_ListView_Filtrar",
-      "projectPath": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\T03_ListView_Filtrar.csproj",
+      "projectPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\T03_ListView_Filtrar.csproj",
       "packagesPath": "C:\\Users\\IvanSM\\.nuget\\packages\\",
-      "outputPath": "D:\\Github_IvanSM\\FPDAM\\Segundo_DAM\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\obj\\",
+      "outputPath": "D:\\Github\\DEIN\\SegundoTrimestre\\WPF_Relacion12_IvanSM\\T03_ListView_Filtrar\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

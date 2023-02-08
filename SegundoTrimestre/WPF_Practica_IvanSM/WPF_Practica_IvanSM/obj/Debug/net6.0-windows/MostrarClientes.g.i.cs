@@ -77,7 +77,7 @@ namespace WPF_Practica_IvanSM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;component/mostrarclientes.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/WPF_Practica_IvanSM;V1.0.0.0;component/mostrarclientes.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\MostrarClientes.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

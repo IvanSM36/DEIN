@@ -61,7 +61,7 @@ namespace T04_ComboBox_IvanSM {
                 return;
             }
             _contentLoaded = true;
-            System.Uri resourceLocater = new System.Uri("/T04_ComboBox_IvanSM;component/agenda.xaml", System.UriKind.Relative);
+            System.Uri resourceLocater = new System.Uri("/T04_ComboBox_IvanSM;V1.0.0.0;component/agenda.xaml", System.UriKind.Relative);
             
             #line 1 "..\..\..\Agenda.xaml"
             System.Windows.Application.LoadComponent(this, resourceLocater);

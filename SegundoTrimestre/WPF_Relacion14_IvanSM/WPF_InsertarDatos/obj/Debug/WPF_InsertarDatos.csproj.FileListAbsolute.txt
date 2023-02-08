@@ -40,3 +40,5 @@ D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debu
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\K4os.Compression.LZ4.dll
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\K4os.Hash.xxHash.dll
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\MySql.Data.xml
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\obj\Debug\InsertarDatos.g.cs
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\obj\Debug\InsertarDatos.baml

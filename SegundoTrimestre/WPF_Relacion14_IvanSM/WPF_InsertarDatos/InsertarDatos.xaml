@@ -1,0 +1,53 @@
+﻿<Window x:Class="WPF_InsertarDatos.InsertarDatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WPF_InsertarDatos"
+        mc:Ignorable="d"
+        Title="InsertarDatos" Height="450" Width="500" Loaded="Window_Loaded">
+
+    <Grid Margin="20">
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Content="Base de datos: ZooTerra "/>
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" FontSize="25" TextDecorations="Underline" Text="Insertar datos en la tabla Animales:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+        
+
+        <StackPanel Margin="30 0 0 0" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Content="Nombre:" />
+            <TextBox Name="txtNombre" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="30 0 0 0" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Content="Especie:" />
+            <TextBox Name="txtEspecie" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="30 0 0 0" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Content="Raza:" />
+            <TextBox Name="txtRaza" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Margin="30 0 0 0" Grid.Row="5" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+            <Label HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="20" Content="Sexo:" />
+            <TextBox Name="txtSexo" Height="30" Width="50" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button Height="40" Width="150" FontSize="20" Content="Añadir" Click="btnGuarda_Click"/>
+            <Button Height="40" Width="150" FontSize="20" Content="Cancelar" Click="cerrarVentana" Margin="20 0 0 0"/>
+        </StackPanel>
+
+    </Grid>
+</Window>
