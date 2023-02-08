@@ -9,7 +9,7 @@
     <Grid>
 
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-            <Button Height="50" Width="200" FontSize="25" Click="btnConectar_Click" Content="Conectar" />
+            <Button Height="50" Width="200" FontSize="25" Click="Button_Click" Content="Conectar" />
             <Button Height="50" Width="200" FontSize="25" Click="btnConsulta_Click"  Content="Ver datos"  Margin="20"/>
         </StackPanel>
         

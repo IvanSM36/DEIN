@@ -30,7 +30,7 @@ namespace WPF_ConectarDB
             AdminDB db = new AdminDB();
             gridDatos.ItemsSource = null;
             db.llenarDatosUsuarios();
-            gridDatos.ItemsSource = db.dsAnimales.Tables["Animales"].DefaultView;
+            gridDatos.ItemsSource = db.dsAnimales.Tables["animales"].DefaultView;
         }
     }
 }

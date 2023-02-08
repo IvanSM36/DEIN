@@ -50,11 +50,11 @@ namespace InsertaDatos
                 con.ConnectionString = CadenaDeConexion;
                 con.Open();
                 dsAnimales.Clear();
-                string qry = "SELECT * FROM Animales";
+                string qry = "SELECT * FROM animales";
                 cmd.CommandText = qry;
                 cmd.Connection = con;
                 Adaptador.SelectCommand = cmd;
-                Adaptador.Fill(dsAnimales, "Animales");
+                Adaptador.Fill(dsAnimales, "animales");
                 con.Close();
             }
             catch (Exception ex)
