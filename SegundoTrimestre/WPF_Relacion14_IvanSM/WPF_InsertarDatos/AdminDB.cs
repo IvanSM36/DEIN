@@ -41,7 +41,7 @@ namespace WPF_InsertarDatos
 
 
 
-        public static void desconectar()
+        public void desconectar()
         {
             con.Close();
         }
