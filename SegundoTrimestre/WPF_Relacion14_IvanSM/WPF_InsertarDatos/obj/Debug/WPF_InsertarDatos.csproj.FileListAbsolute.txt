@@ -31,3 +31,12 @@ D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debu
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\System.Numerics.Vectors.xml
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\MySql.Data.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\Google.Protobuf.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\ZstdNet.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\BouncyCastle.Crypto.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\Ubiety.Dns.Core.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\K4os.Compression.LZ4.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\K4os.Hash.xxHash.dll
+D:\Github\DEIN\SegundoTrimestre\WPF_Relacion14_IvanSM\WPF_InsertarDatos\bin\Debug\MySql.Data.xml

@@ -20,6 +20,8 @@ namespace WPF_InsertarDatos
     /// </summary>
     public partial class MainWindow : Window
     {
+        AdminDB db = new AdminDB();
+
         public MainWindow()
         {
             InitializeComponent();
@@ -27,8 +29,9 @@ namespace WPF_InsertarDatos
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            AdminDB db = new AdminDB();
             db.Conectar();
+            txtBlockEstadoBD.Text = "Online";
+            db.desconectar();
         }
 
 

@@ -6,8 +6,14 @@
         xmlns:local="clr-namespace:WPF_InsertarDatos"
         mc:Ignorable="d"
         Title="Datos" Height="450" Width="800">
-    
+
     <Grid Margin="10">
-        <DataGrid Name="gridDatos"></DataGrid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="50"/>
+        </Grid.RowDefinitions>
+        
+        <DataGrid Name="gridDatos" Grid.Row="0"></DataGrid>
+        <Button Grid.Row="1" Height="40" Width="200" FontSize="20" IsCancel="True">Cerrar</Button>
     </Grid>
 </Window>

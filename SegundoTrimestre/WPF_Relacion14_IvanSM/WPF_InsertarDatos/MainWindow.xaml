@@ -8,6 +8,11 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Margin="20 0 0 20" >Conexion a la base de datos:</TextBlock>
+                <TextBlock Name="txtBlockEstadoBD" Margin="5 0 0 0" Text="Offline" />
+            </StackPanel>
+            
             <Button Height="50" Width="200" FontSize="25" Click="Button_Click" Content="Conectar" />
             <Button Height="50" Width="200" FontSize="25" Click="btnConsulta_Click"  Content="Ver datos"  Margin="20"/>
         </StackPanel>

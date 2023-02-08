@@ -29,7 +29,8 @@ namespace WPF_InsertarDatos
             {
                 con.ConnectionString = CadenaDeConexion;
                 con.Open();
-                MessageBox.Show("La BD esta ahora conectada");
+                
+
             }
             catch (Exception)
             {
@@ -40,7 +41,7 @@ namespace WPF_InsertarDatos
 
 
 
-        public static void Desconectar()
+        public static void desconectar()
         {
             con.Close();
         }
