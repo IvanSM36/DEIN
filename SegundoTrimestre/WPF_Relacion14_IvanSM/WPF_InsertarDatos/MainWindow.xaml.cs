@@ -29,9 +29,18 @@ namespace WPF_InsertarDatos
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            db.Conectar();
-            txtBlockEstadoBD.Text = "Online";
 
+            if (db.Conectar())
+            {
+                txtBlockEstadoBD.Text = "Online";
+                txtBlockEstadoBD.Foreground = Brushes.Green;
+            }
+            else
+            {
+                txtBlockEstadoBD.Text = "Offline";
+                txtBlockEstadoBD.Foreground = Brushes.Red;
+
+            }
             db.Desconectar();
         }
 

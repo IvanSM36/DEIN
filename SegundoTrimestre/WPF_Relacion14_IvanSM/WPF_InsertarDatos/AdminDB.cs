@@ -24,18 +24,18 @@ namespace WPF_InsertarDatos
         static MySqlDataAdapter Adaptador = new MySqlDataAdapter();
         public DataSet dsAnimales = new DataSet();
 
-        public void Conectar()
+        public Boolean Conectar()
         {
             try
             {
                 con.ConnectionString = CadenaDeConexion;
                 con.Open();
-                
-
+                return true;
             }
             catch (Exception)
             {
                 MessageBox.Show("Ocurrio un error al conectar a la BD");
+                return false;
                 throw;
             }
         }

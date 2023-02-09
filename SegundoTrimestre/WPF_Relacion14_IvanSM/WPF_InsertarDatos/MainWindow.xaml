@@ -6,11 +6,16 @@
         xmlns:local="clr-namespace:WPF_InsertarDatos"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+
+    
     <Grid>
         <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
             <StackPanel Orientation="Horizontal">
-                <TextBlock Margin="20 0 0 20" >Conexion a la base de datos:</TextBlock>
-                <TextBlock Name="txtBlockEstadoBD" Margin="5 0 0 0" Text="Offline" />
+                <TextBlock Margin="20 0 0 20">Conexion a la base de datos:</TextBlock>
+                <StackPanel>
+                    <Image Source="/images/off.png"/>
+                    <TextBlock Name="txtBlockEstadoBD" Margin="5 0 0 0" Text="Offline" Foreground="Red"/>
+                </StackPanel>
             </StackPanel>
             
             <Button Height="50" Width="200" FontSize="25" Click="Button_Click" Content="Conectar" />
