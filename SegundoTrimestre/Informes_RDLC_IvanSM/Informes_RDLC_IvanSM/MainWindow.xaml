@@ -9,7 +9,7 @@
         Title="MainWindow" Height="450" Width="800">
     
     <Grid>
-        <WindowsFormsHost HorizontalAligment="Left" Heigth="390" Margin="20,0,0,0" VerticalAligment="Center" Width="750">
+        <WindowsFormsHost HorizontalAlignment="Left" Height="390" Margin="20,0,0,0" VerticalAlignment="Center" Width="750">
             <rv:ReportViewer x:Name="_reportViewer"/>
         </WindowsFormsHost>
     </Grid>
