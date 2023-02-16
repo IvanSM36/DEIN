@@ -18,7 +18,7 @@
               <Width>3.29375cm</Width>
             </TablixColumn>
             <TablixColumn>
-              <Width>2.64552cm</Width>
+              <Width>3.00271cm</Width>
             </TablixColumn>
           </TablixColumns>
           <TablixRows>
@@ -191,14 +191,14 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox32">
+                    <Textbox Name="Textbox8">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
                         <Paragraph>
                           <TextRuns>
                             <TextRun>
-                              <Value>Calculo</Value>
+                              <Value>PrecioStock</Value>
                               <Style>
                                 <FontSize>11pt</FontSize>
                                 <FontWeight>Bold</FontWeight>
@@ -211,7 +211,7 @@
                           </Style>
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox32</rd:DefaultName>
+                      <rd:DefaultName>Textbox8</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -369,7 +369,7 @@
                 </TablixCell>
                 <TablixCell>
                   <CellContents>
-                    <Textbox Name="Textbox33">
+                    <Textbox Name="Textbox9">
                       <CanGrow>true</CanGrow>
                       <KeepTogether>true</KeepTogether>
                       <Paragraphs>
@@ -386,7 +386,7 @@
                           <Style />
                         </Paragraph>
                       </Paragraphs>
-                      <rd:DefaultName>Textbox33</rd:DefaultName>
+                      <rd:DefaultName>Textbox9</rd:DefaultName>
                       <Style>
                         <Border>
                           <Style>None</Style>
@@ -398,7 +398,6 @@
                         <PaddingBottom>2pt</PaddingBottom>
                       </Style>
                     </Textbox>
-                    <rd:Selected>true</rd:Selected>
                   </CellContents>
                 </TablixCell>
               </TablixCells>
@@ -425,8 +424,10 @@
           </TablixMembers>
         </TablixRowHierarchy>
         <DataSetName>DataSetStock</DataSetName>
+        <Top>1.82563cm</Top>
+        <Left>1.12448cm</Left>
         <Height>1.2cm</Height>
-        <Width>14.12719cm</Width>
+        <Width>14.48437cm</Width>
         <Style>
           <Border>
             <Style>None</Style>
