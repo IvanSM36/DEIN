@@ -27,7 +27,7 @@ namespace Informes_RDLC_IvanSM.Properties {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
         [global::System.Configuration.DefaultSettingValueAttribute("Data Source=212.227.147.133;Initial Catalog=TestDB;Persist Security Info=True;Use" +
-            "r ID=SA")]
+            "r ID=SA;Password=#IvanSM_20")]
         public string TestDBConnectionString {
             get {
                 return ((string)(this["TestDBConnectionString"]));

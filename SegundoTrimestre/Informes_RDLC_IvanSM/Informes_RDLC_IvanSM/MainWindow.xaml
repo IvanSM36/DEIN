@@ -6,10 +6,10 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Informes_RDLC_IvanSM"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="800" Width="800">
     
     <Grid>
-        <WindowsFormsHost HorizontalAlignment="Left" Height="390" Margin="20,0,0,0" VerticalAlignment="Center" Width="750">
+        <WindowsFormsHost HorizontalAlignment="Center" Height="750" Width="750" VerticalAlignment="Center" >
             <rv:ReportViewer x:Name="_reportViewer"/>
         </WindowsFormsHost>
     </Grid>
