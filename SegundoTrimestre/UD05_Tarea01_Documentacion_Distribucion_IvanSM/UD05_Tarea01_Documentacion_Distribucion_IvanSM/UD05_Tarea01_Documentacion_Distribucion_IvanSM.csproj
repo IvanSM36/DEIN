@@ -79,6 +79,7 @@
     <Compile Include="BorrarDatos.xaml.cs">
       <DependentUpon>BorrarDatos.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Coche.cs" />
     <Compile Include="GenerarInforme.xaml.cs">
       <DependentUpon>GenerarInforme.xaml</DependentUpon>
     </Compile>
