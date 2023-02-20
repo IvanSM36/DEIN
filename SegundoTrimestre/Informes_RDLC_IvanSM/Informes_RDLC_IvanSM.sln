@@ -5,6 +5,8 @@ VisualStudioVersion = 17.4.33213.308
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Informes_RDLC_IvanSM", "Informes_RDLC_IvanSM\Informes_RDLC_IvanSM.csproj", "{9A59486B-EB03-49C6-AED7-5A7568B5320E}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TareaAmpliación_IvanSM", "TareaAmpliación_IvanSM\TareaAmpliación_IvanSM.csproj", "{A2C04239-46FE-49DA-878D-BF4894FF788A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{9A59486B-EB03-49C6-AED7-5A7568B5320E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A59486B-EB03-49C6-AED7-5A7568B5320E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A59486B-EB03-49C6-AED7-5A7568B5320E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2C04239-46FE-49DA-878D-BF4894FF788A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2C04239-46FE-49DA-878D-BF4894FF788A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2C04239-46FE-49DA-878D-BF4894FF788A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2C04239-46FE-49DA-878D-BF4894FF788A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

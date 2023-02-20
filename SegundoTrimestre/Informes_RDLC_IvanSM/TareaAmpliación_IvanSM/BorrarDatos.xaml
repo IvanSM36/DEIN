@@ -1,0 +1,56 @@
+﻿<Window x:Class="TareaAmpliación_IvanSM.BorrarDatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:TareaAmpliación_IvanSM"
+        mc:Ignorable="d"
+        Title="BorrarDatos" Height="380" Width="500">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/mandos.jpg"/>
+        </Grid.Background>
+        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="60"/>
+        </Grid.RowDefinitions>
+        
+        <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" Height="230" Width="420" BorderBrush="White" BorderThickness="1"  CornerRadius="10">
+            <Border.Background>
+                <SolidColorBrush Color="#FF222933" Opacity="0.7"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Direction="300"/>
+            </Border.Effect>
+
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Foreground="White" Margin="10 10 0 0" Content="Base de datos: TestDB "/>
+                <TextBlock Grid.Row="1" Grid.ColumnSpan="2" FontSize="25" Foreground="White" TextDecorations="Underline" Text="Borrar datos de la tabla Stock:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <StackPanel Grid.Row="2">
+                    <TextBlock Margin="20 20 0 10" Foreground="White" FontSize="20"> Introduzca el ID del articulo para borrarlo:</TextBlock>
+                    <StackPanel Margin="20 0 0 0" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                        <Label HorizontalAlignment="Center" VerticalAlignment="Center" Margin="20 0 0 0" Foreground="White" FontSize="20" Content="ID:" />
+                        <TextBox Name="txtID" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+                    </StackPanel>
+                </StackPanel>
+
+            </Grid>
+            
+        </Border>
+        
+        <StackPanel Orientation="Horizontal" Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Button  Height="40" FontSize="20" Width="100" Click="btnBorrarDatos" Margin="0 0 5 0">Borrar</Button>
+            <Button  Height="40" FontSize="20" Width="100" Click="btnCerrarVentana">Cerrar</Button>
+        </StackPanel>
+    </Grid>
+    
+</Window>
