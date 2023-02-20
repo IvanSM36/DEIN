@@ -63,11 +63,19 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         /// <summary>
         /// Metodo que muestra un string simulando que acelera
         /// </summary>
-        /// <param name=""></param>
+        /// <param name="siono"></param>
         /// <returns>String</returns>
-        public String acelerar()
+        public String acelerar(Boolean siono)
         {
-            return "Fiiiiumm"; 
+            if (siono = true)
+            {
+                return "Fiiiiumm";
+
+            }
+            else
+            {
+                return "Frenando";
+            }
         }
     }
 }
