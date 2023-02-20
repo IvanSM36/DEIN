@@ -1,0 +1,65 @@
+﻿<Window x:Class="UD05_Tarea01_Documentacion_Distribucion_IvanSM.InsertarDatos"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UD05_Tarea01_Documentacion_Distribucion_IvanSM"
+        mc:Ignorable="d"
+        Title="InsertarDatos" Height="450" Width="600">
+
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/comecocos.jpg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="60" />
+        </Grid.RowDefinitions>
+
+        <Border Grid.Row="0" HorizontalAlignment="Center" VerticalAlignment="Center" BorderBrush="White" BorderThickness="1"  CornerRadius="10">
+            <Border.Background>
+                <SolidColorBrush Color="#FF222933" Opacity="0.8"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Direction="300"/>
+            </Border.Effect>
+
+            <Grid Height="250" Width="420">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="40"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="*"/>
+                </Grid.RowDefinitions>
+
+                <Label Grid.Row="0" Grid.ColumnSpan="2" FontSize="20" Foreground="White" Margin="10 0 0 0" Content="Base de datos: TestDB "/>
+                <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Foreground="White" FontSize="25" TextDecorations="Underline" Text="Insertar datos en la tabla Stock:" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                <StackPanel Margin="30 0 0 0" Grid.Row="2" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" Content="Descripción:" />
+                    <TextBox Name="txtDescripcion" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="30 0 0 0" Grid.Row="3" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" Content="Unidades:" />
+                    <TextBox Name="txtUnidades" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+                </StackPanel>
+
+                <StackPanel Margin="30 0 0 0" Grid.Row="4" Orientation="Horizontal" HorizontalAlignment="Left" VerticalAlignment="Center">
+                    <Label HorizontalAlignment="Center" VerticalAlignment="Center" Foreground="White" FontSize="20" Content="Precio de venta:" />
+                    <TextBox Name="txtPrecioVenta" Height="30" Width="200" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" Padding="5 0 0 0"></TextBox>
+                </StackPanel>
+
+            </Grid>
+        </Border>
+
+        <StackPanel Orientation="Horizontal" Grid.Row="6" HorizontalAlignment="Center" VerticalAlignment="Top">
+            <Button Height="40" Width="150" FontSize="20" Content="Añadir" Click="btnInsertarDatos"/>
+            <Button Height="40" Width="150" FontSize="20" Content="Cancelar" Click="btnCerrarVentana" Margin="20 0 0 0"/>
+        </StackPanel>
+    </Grid>
+
+</Window>

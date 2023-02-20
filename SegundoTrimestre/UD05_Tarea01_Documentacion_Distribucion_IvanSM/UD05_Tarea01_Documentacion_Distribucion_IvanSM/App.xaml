@@ -1,0 +1,9 @@
+﻿<Application x:Class="UD05_Tarea01_Documentacion_Distribucion_IvanSM.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:UD05_Tarea01_Documentacion_Distribucion_IvanSM"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

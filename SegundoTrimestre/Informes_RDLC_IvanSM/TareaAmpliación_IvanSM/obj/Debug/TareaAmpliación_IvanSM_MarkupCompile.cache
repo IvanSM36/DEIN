@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\IvanSM\Downloads\Practica_InformeRDLC_IvanSM\Informes_RDLC_IvanSM\TareaAmpliación_IvanSM\obj\Debug\
+D:\Github\DEIN\SegundoTrimestre\Informes_RDLC_IvanSM\TareaAmpliación_IvanSM\obj\Debug\
 TareaAmpliación_IvanSM
 none
 false
 DEBUG;TRACE
-C:\Users\IvanSM\Downloads\Practica_InformeRDLC_IvanSM\Informes_RDLC_IvanSM\TareaAmpliación_IvanSM\App.xaml
+D:\Github\DEIN\SegundoTrimestre\Informes_RDLC_IvanSM\TareaAmpliación_IvanSM\App.xaml
 6853393119
 5957568213
-12-2113498631
-30-654251535
+1399380047
+30-311364429
 BorrarDatos.xaml;GenerarInforme.xaml;InsertarDatos.xaml;MainWindow.xaml;ModificarDatos.xaml;MostrarDatos.xaml;
 
-False
+True
 

@@ -1,0 +1,125 @@
+﻿<Window x:Class="UD05_Tarea01_Documentacion_Distribucion_IvanSM.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"       
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:UD05_Tarea01_Documentacion_Distribucion_IvanSM"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="550" Width="800">
+    <Grid>
+        <Grid.Background>
+            <ImageBrush ImageSource="/image/gaming.jpeg"/>
+        </Grid.Background>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="100"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--
+        Creamos un DockPanel para la barra del menu
+        -->
+        <DockPanel Grid.Row="0" Background="Aquamarine">
+            <!--
+            Establecemos la posicion del menu y el tamaño de letra
+            -->
+            <Menu DockPanel.Dock="Top" FontSize="20" Background="#FFE7A0AB" >
+
+                <!--
+                Creamos los items del menu
+                -->
+                <MenuItem Header="_Tabla">
+                    <!--
+                    Creamos los subItems del menu
+                    -->
+                    <MenuItem Header="_Mostrar datos" Click="btnMostrarDatos" >
+                        <MenuItem.Icon>
+                            <Image Source="/image/mostrar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Insertar datos" Click="btnInsertarDatos">
+                        <MenuItem.Icon>
+                            <Image Source="/image/agregar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Modificar datos" Click="btnModificarDatos">
+                        <MenuItem.Icon>
+                            <Image Source="/image/editar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <MenuItem Header="_Borrar datos" Click="btnBorrarDatos" >
+                        <MenuItem.Icon>
+                            <Image Source="/image/borrar.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                    <Separator/>
+
+                    <MenuItem Header="_Salir" Click="btnCerrarVentana">
+                        <MenuItem.Icon>
+                            <Image Source="/image/salir.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </MenuItem>
+
+                <!--
+                Creamos otro item
+                -->
+                <MenuItem Header="_Informe">
+
+                    <MenuItem Header="_Generar informe" Click="btnGenerarInforme">
+                        <MenuItem.Icon>
+                            <Image Source="/image/informe.png"/>
+                        </MenuItem.Icon>
+                    </MenuItem>
+
+                </MenuItem>
+
+            </Menu>
+        </DockPanel>
+
+        <Border Grid.Row="1" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 20 0 0" Height="70" Width="500" BorderBrush="White" Background="#FF769FB8" BorderThickness="3,3,3,3"   CornerRadius="10">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Direction="300"/>
+            </Border.Effect>
+
+            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <TextBlock Foreground="White" FontWeight="Bold" TextDecorations="Underline" FontSize="50" FontFamily="Stencil">Tienda Gamivan</TextBlock>
+            </StackPanel>
+
+        </Border>
+
+        <Border Grid.Row="2" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0 15 0 0" Height="350" Width="400" BorderBrush="White" BorderThickness="1"  CornerRadius="10">
+            <Border.Background>
+                <SolidColorBrush Color="#FF222933" Opacity="0.7"/>
+            </Border.Background>
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" Direction="300"/>
+            </Border.Effect>
+
+            <Grid>
+                <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontWeight="Bold" TextDecorations="Underline" Foreground="White" FontSize="30" Text="Menu Principal" Margin="0 0 0 10"/>
+
+                    <StackPanel Orientation="Horizontal" Margin="10">
+                        <TextBlock Margin="10 0 0 0" Foreground="White">Conexion a la base de datos:</TextBlock>
+                        <Image Name="imgEstado" Source="{Binding ImagenConexion}" Margin="5 0 0 0" Height="10" Width="10"/>
+                        <TextBlock Name="txtBlockEstadoBD" Margin="3 0 0 0" Text="Offline" Foreground="Red"/>
+                    </StackPanel>
+
+                    <Button Height="50" Width="200" FontSize="25" Content="Conectar" Click="btnPruebaConectar" />
+                    <Button Height="50" Width="200" FontSize="25" Click="btnMostrarDatos" Content="Mostrar datos" Margin="20"/>
+                    <Button Height="50" Width="200" FontSize="25" Content="Informe" Click="btnGenerarInforme" />
+
+                </StackPanel>
+            </Grid>
+        </Border>
+
+    </Grid>
+</Window>
