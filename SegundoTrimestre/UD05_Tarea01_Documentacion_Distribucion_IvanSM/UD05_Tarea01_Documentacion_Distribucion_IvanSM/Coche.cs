@@ -25,7 +25,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         }
 
         /// <summary>
-        /// Constructor del objeto coche con todos los parametros
+        /// Constructor de la clase <c>Coche</c> con todos los parametros
         /// </summary>
         /// <param name="id"></param>
         /// <param name="matricula"></param>
@@ -62,6 +62,14 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 
         /// <summary>
         /// Metodo que muestra un string simulando que acelera
+        /// <example>
+        /// <code>
+        /// Por ejemplo:
+        /// 
+        ///     Coche c = new Coche(0001, "00001DRF", "Ford", "Focus", "Azul");
+        ///     c.acelerar();
+        /// </code>
+        /// </example>
         /// </summary>
         /// <param name="siono"></param>
         /// <returns>String</returns>
@@ -77,5 +85,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
                 return "Frenando";
             }
         }
+
+
     }
 }

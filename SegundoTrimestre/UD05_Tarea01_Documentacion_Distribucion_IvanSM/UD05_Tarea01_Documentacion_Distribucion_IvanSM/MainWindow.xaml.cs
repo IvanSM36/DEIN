@@ -37,7 +37,6 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
          * <param>: tag que muestra el tipo de dato que recoge por parametro
          */
 
-
         /// <summary>
         /// Metodo que comprueba la conexion.
         /// </summary>
