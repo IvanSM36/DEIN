@@ -91,8 +91,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             GenerarInforme gi = new GenerarInforme();
             gi.Show();
         }
-
-        
+     
         /// <summary>
         /// Metodo que abre la ventana InsertarDatos
         /// </summary>

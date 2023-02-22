@@ -13,6 +13,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+/// <summary>
+/// The UD05_Tarea01_Documentacion_Distribucion_IvanSM namespace.
+/// </summary>
 namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 {
     /// <summary>
@@ -20,6 +24,8 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
     /// </summary>
     public partial class GenerarInforme : Window
     {
+
+        /// <summary>Initializes a new instance of the <see cref="T:UD05_Tarea01_Documentacion_Distribucion_IvanSM.GenerarInforme" /> class.</summary>
         public GenerarInforme()
         {
             InitializeComponent();
@@ -29,6 +35,10 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 
         private bool _isReportViewerLoaded;
 
+
+        /// <summary>Handles the Load event of the ReportViewer control.</summary>
+        /// <param name="sender">The source of the event.</param>
+        /// <param name="e">The <see cref="EventArgs" /> instance containing the event data.</param>
         private void ReportViewer_Load(object sender, EventArgs e)
         {
             // Comprobamos si el controlador de informes ya ha sido cargado.

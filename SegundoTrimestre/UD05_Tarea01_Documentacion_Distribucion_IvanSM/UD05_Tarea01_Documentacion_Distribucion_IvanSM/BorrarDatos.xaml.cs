@@ -14,6 +14,10 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
+
+/// <summary>
+/// The UD05_Tarea01_Documentacion_Distribucion_IvanSM namespace.
+/// </summary>
 namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 {
     /// <summary>
@@ -25,10 +29,10 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         {
             InitializeComponent();
         }
-        /* * 
-         * Metodo que borra un elemento de la tabla Stock mediante el ID introducido 
-         * 
-         */
+
+        /// <summary>Metodo que borra un elemento de la tabla Stock mediante el ID introducido.</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnBorrarDatos(object sender, RoutedEventArgs e)
         {
             // Obtiene la cadena de conexión de la BBDD.        
@@ -63,14 +67,14 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             }
         }
 
-        /*
-         * Metodo que cierra la ventana
-         * 
-         */
+        /// <summary> Metodo que cierra la ventana</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnCerrarVentana(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
     }
+
 }

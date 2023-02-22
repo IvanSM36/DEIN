@@ -25,10 +25,10 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         {
             InitializeComponent();
         }
-        /*
-         * Metodo que realiza una consulta UPDATE a la BBDD
-         * 
-         */
+    
+        /// <summary>Metodo que realiza una consulta UPDATE a la BBDD.</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnModificarDatos(object sender, RoutedEventArgs e)
         {
 
@@ -66,15 +66,14 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             }
         }
 
-        /*
-         * Metodo que cierra la ventana
-         * 
-         */
+        /// <summary>Metodo que cierra la ventana.</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnCerrarVentana(object sender, RoutedEventArgs e)
         {
             this.Close();
         }
 
-
     }
+
 }

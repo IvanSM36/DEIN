@@ -45,9 +45,8 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             FillDataGrid();
         }
 
-
         /// <summary>
-        /// Fills the data grid.
+        /// Metodo que realiza una consulta SELECT en la BBDD.
         /// </summary>
         private void FillDataGrid()
         {
@@ -83,7 +82,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         }
 
         /// <summary>
-        /// BTNs the insertar datos.
+        /// Metodo que abre la ventana InsertarDatos.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
@@ -93,9 +92,8 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             id.Show();
         }
 
-
         /// <summary>
-        /// BTNs the modificar datos.
+        /// Metodo que abre la ventana ModificarDatos.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
@@ -106,7 +104,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
         }
 
         /// <summary>
-        /// BTNs the borrar datos.
+        /// Metodo que abre la ventana BorrarDatos.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
@@ -116,9 +114,8 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             bd.Show();
         }
 
-
         /// <summary>
-        /// BTNs the cerrar ventana.
+        /// Metodo que cierra la ventana.
         /// </summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>

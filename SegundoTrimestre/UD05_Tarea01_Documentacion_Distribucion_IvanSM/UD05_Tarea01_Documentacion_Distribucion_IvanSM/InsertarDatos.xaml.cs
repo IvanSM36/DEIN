@@ -21,13 +21,14 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
     /// </summary>
     public partial class InsertarDatos : Window
     {
+
+        /// <summary>Initializes a new instance of the <see cref="T:UD05_Tarea01_Documentacion_Distribucion_IvanSM.InsertarDatos" /> class.</summary>
         public InsertarDatos()
         {
             InitializeComponent();
         }
 
-
-        /// <summary>BTNs the insertar datos.</summary>
+        /// <summary>Metodo que realiza un INSERT en la BBDD.</summary>
         /// <param name="sender">The sender.</param>
         /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnInsertarDatos(object sender, RoutedEventArgs e)
@@ -67,6 +68,9 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 
         }
 
+        /// <summary>Metodo que cierra una ventana.</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnCerrarVentana(object sender, RoutedEventArgs e)
         {
             this.Close();
