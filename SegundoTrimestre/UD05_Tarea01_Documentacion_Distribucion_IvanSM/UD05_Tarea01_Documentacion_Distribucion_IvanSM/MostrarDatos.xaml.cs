@@ -1,4 +1,17 @@
-﻿using System;
+﻿// ***********************************************************************
+// Assembly         : UD05_Tarea01_Documentacion_Distribucion_IvanSM
+// Author           : IvanSM
+// Created          : 02-22-2023
+//
+// Last Modified By : IvanSM
+// Last Modified On : 02-22-2023
+// ***********************************************************************
+// <copyright file="MostrarDatos.xaml.cs" company="">
+//     Copyright ©  2023
+// </copyright>
+// <summary></summary>
+// ***********************************************************************
+using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
@@ -22,6 +35,9 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
     /// </summary>
     public partial class MostrarDatos : Window
     {
+        /// <summary>
+        /// Initializes a new instance of the <see cref="MostrarDatos"/> class.
+        /// </summary>
         public MostrarDatos()
         {
             InitializeComponent();
@@ -29,9 +45,10 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             FillDataGrid();
         }
 
-        /*
-         * Metodo que consulta la tabla Stock y la muestra en un Datagrid
-         */
+
+        /// <summary>
+        /// Fills the data grid.
+        /// </summary>
         private void FillDataGrid()
         {
             // Obtiene la cadena de conexión de la BBDD.        
@@ -65,36 +82,46 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 
         }
 
-        /*
-         * Metodo que abre la ventana InsertarDatos
-         */
+        /// <summary>
+        /// BTNs the insertar datos.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnInsertarDatos(object sender, RoutedEventArgs e)
         {
             InsertarDatos id = new InsertarDatos();
             id.Show();
         }
 
-        /*
-         * Metodo que abre la ventana ModificarDatos
-         */
+
+        /// <summary>
+        /// BTNs the modificar datos.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnModificarDatos(object sender, RoutedEventArgs e)
         {
             ModificarDatos md = new ModificarDatos();
             md.Show();
         }
 
-        /*
-         * Metodo que abre la ventana Borrar datos
-         */
+        /// <summary>
+        /// BTNs the borrar datos.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnBorrarDatos(object sender, RoutedEventArgs e)
         {
             BorrarDatos bd = new BorrarDatos();
             bd.Show();
         }
 
-        /*
-         * Metodo que cierra la ventana
-         */
+
+        /// <summary>
+        /// BTNs the cerrar ventana.
+        /// </summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs"/> instance containing the event data.</param>
         private void btnCerrarVentana(object sender, RoutedEventArgs e)
         {
             this.Close();

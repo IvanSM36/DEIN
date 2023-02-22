@@ -26,9 +26,7 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             InitializeComponent();
         }
 
-        /*
-        * Metodo que realiza la consulta INSERT en la BBDD
-        */
+      
         private void btnInsertarDatos(object sender, RoutedEventArgs e)
         {
             // Obtiene la cadena de conexión de la BBDD.        
@@ -66,9 +64,6 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
 
         }
 
-        /*
-         * Metodo que cierra la ventana
-         */
         private void btnCerrarVentana(object sender, RoutedEventArgs e)
         {
             this.Close();
