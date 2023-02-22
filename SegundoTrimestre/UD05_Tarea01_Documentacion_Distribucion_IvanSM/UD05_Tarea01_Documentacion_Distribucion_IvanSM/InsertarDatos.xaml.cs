@@ -26,7 +26,10 @@ namespace UD05_Tarea01_Documentacion_Distribucion_IvanSM
             InitializeComponent();
         }
 
-      
+
+        /// <summary>BTNs the insertar datos.</summary>
+        /// <param name="sender">The sender.</param>
+        /// <param name="e">The <see cref="RoutedEventArgs" /> instance containing the event data.</param>
         private void btnInsertarDatos(object sender, RoutedEventArgs e)
         {
             // Obtiene la cadena de conexión de la BBDD.        
