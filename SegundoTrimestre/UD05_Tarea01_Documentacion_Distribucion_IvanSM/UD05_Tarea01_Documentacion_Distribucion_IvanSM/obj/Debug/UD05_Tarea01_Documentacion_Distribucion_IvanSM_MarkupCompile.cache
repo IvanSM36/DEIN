@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-I:\FPGS\GitHub\DEIN\SegundoTrimestre\UD05_Tarea01_Documentacion_Distribucion_IvanSM\UD05_Tarea01_Documentacion_Distribucion_IvanSM\obj\Debug\
+D:\Github\DEIN\SegundoTrimestre\UD05_Tarea01_Documentacion_Distribucion_IvanSM\UD05_Tarea01_Documentacion_Distribucion_IvanSM\obj\Debug\
 UD05_Tarea01_Documentacion_Distribucion_IvanSM
 none
 false
 DEBUG;TRACE
-I:\FPGS\GitHub\DEIN\SegundoTrimestre\UD05_Tarea01_Documentacion_Distribucion_IvanSM\UD05_Tarea01_Documentacion_Distribucion_IvanSM\App.xaml
+D:\Github\DEIN\SegundoTrimestre\UD05_Tarea01_Documentacion_Distribucion_IvanSM\UD05_Tarea01_Documentacion_Distribucion_IvanSM\App.xaml
 6853393119
 5957568213
 13873383287
-22-1293908618
+221655380828
 BorrarDatos.xaml;GenerarInforme.xaml;InsertarDatos.xaml;MainWindow.xaml;ModificarDatos.xaml;MostrarDatos.xaml;
 
-False
+True
 
