@@ -1,0 +1,8 @@
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\bin\Debug\PruebasUnitarias.exe.config
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\bin\Debug\PruebasUnitarias.exe
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\bin\Debug\PruebasUnitarias.pdb
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.AssemblyReference.cache
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.SuggestedBindingRedirects.cache
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\obj\Debug\PruebasUnitarias.csproj.CoreCompileInputs.cache
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\obj\Debug\PruebasUnitarias.exe
+I:\FPGS\GitHub\DEIN\SegundoTrimestre\PruebasUnitarias\PruebasUnitarias\obj\Debug\PruebasUnitarias.pdb
