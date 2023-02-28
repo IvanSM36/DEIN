@@ -29,7 +29,7 @@ namespace UnitTestBanco1
             // Arrange: Inicializa las variables
             double saldoInicial = 1500;
             double saldoRetirar = 500;
-            double saldoEsperado = 1200;
+            double saldoEsperado = 1000;
             Cliente c = new Cliente("Sesilia");
 
             // Act: Llamamos a los metodos para calcular
@@ -40,5 +40,24 @@ namespace UnitTestBanco1
             double actual = c.saldoTotal;
             Assert.AreEqual(saldoEsperado, actual);
         }
+
+        [TestMethod]
+        public void Test_RetirarMasSaldoPermitido()
+        {
+            // Arrange: Inicializa las variables
+            double saldoInicial = 1500;
+            double saldoRetirar = 3000;
+            double saldoEsperado = 0;
+            Cliente c = new Cliente("Rogelio");
+
+            // Act: Llamamos a los metodos para calcular
+            c.ingresarSaldo(saldoInicial);
+            c.retirarSaldo(saldoRetirar);
+
+            // Assert: Comprobamos los resultados
+            double actual = c.saldoTotal;
+            Assert.AreEqual(saldoEsperado, actual);
+        }
+
     }
 }
