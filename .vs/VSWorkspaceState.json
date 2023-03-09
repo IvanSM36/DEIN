@@ -1,6 +1,10 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\SegundoTrimestre",
+    "\\SegundoTrimestre\\PruebaWPF",
+    "\\SegundoTrimestre\\PruebaWPF\\PruebaWPF"
   ],
+  "SelectedNode": "\\SegundoTrimestre\\PruebaWPF\\PruebaWPF.sln",
   "PreviewInSolutionExplorer": false
 }

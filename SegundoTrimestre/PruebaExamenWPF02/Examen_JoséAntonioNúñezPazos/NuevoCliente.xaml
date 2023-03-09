@@ -1,0 +1,44 @@
+﻿<Window x:Class="Examen_JoséAntonioNúñezPazos.NuevoCliente"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Examen_JoséAntonioNúñezPazos"
+        mc:Ignorable="d"
+        Title="NuevoCliente" Height="450" Width="800">
+    <Grid>
+        <Label Content="Alta de nuevo cliente" HorizontalAlignment="Center" FontSize="25" FontWeight="Bold"></Label>
+        <Grid Margin="0,35,0,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition></RowDefinition>
+                <RowDefinition></RowDefinition>
+            </Grid.RowDefinitions>
+            
+            <Image Source="/pic/nuevo-usuario.png" Grid.RowSpan="2" Width="200" />
+
+            <StackPanel Grid.Column="2" VerticalAlignment="Center">
+                <StackPanel Margin="50,0,0,0" Orientation="Horizontal">
+                    <Image Source="https://us.123rf.com/450wm/ylivdesign/ylivdesign1810/ylivdesign181002523/109024615-icono-de-bola-de-caramelo-verde-isom%C3%A9trico-de-caramelo-verde-icono-de-vector-de-bola-para-dise%C3%B1o-web.jpg" Width="20"></Image>
+                    <Label Content="_Nombre y Apellidos" FontWeight="DemiBold" Target="{Binding ElementName=tbnombreapellido}"></Label>
+                </StackPanel>
+                <TextBox x:Name="tbnombreapellido" Margin="50,5,0,0"></TextBox>
+
+                <StackPanel Margin="50,20,0,0" Orientation="Horizontal">
+                    <Image Source="https://us.123rf.com/450wm/ylivdesign/ylivdesign1810/ylivdesign181002523/109024615-icono-de-bola-de-caramelo-verde-isom%C3%A9trico-de-caramelo-verde-icono-de-vector-de-bola-para-dise%C3%B1o-web.jpg" Width="20"></Image>
+                    <Label Content="_DNI" FontWeight="DemiBold" Target="{Binding ElementName=tbdni}"></Label>
+                </StackPanel>
+                <TextBox x:Name="tbdni" Margin="50,5,0,0"></TextBox>
+            </StackPanel>
+
+            <StackPanel Orientation="Horizontal" Grid.Column="1" Grid.Row="1">
+                <Button  Margin="100,0,0,0" HorizontalAlignment="Left" Content="Dar de alta" Height="25" Width="80" Click="Button_Click"></Button>
+                <Button Margin="100,0,0,0" HorizontalAlignment="Right" Content=" Cancelar" Height="25" Width="80"></Button>
+            </StackPanel>
+
+        </Grid>
+    </Grid>
+</Window>
