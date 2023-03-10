@@ -23,5 +23,30 @@ namespace PruebaWPF
         {
             InitializeComponent();
         }
+
+        private void busAnimal(Object sender, RoutedEventArgs e)
+        {
+            int id = int.Parse(boxID.Text);
+            Animal a = MainWindow.Animales.Find(x => x.Id == id);
+
+            if (a != null)
+            {
+                MessageBox.Show("El animal ya existe\n" + a.datosAnimal(), "Información animales", MessageBoxButton.OK, MessageBoxImage.Information);
+            }
+            else
+            {
+
+                MessageBox.Show("El animal no existe", "Información animal", MessageBoxButton.OK, MessageBoxImage.Information);
+                Close();
+
+            }
+        }
+
+          private void btnCancelar(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
+
+
     }
 }

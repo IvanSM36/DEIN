@@ -6,7 +6,83 @@
         xmlns:local="clr-namespace:PruebaWPF"
         mc:Ignorable="d"
         Title="BuscarAnimal" Height="450" Width="800">
+
     <Grid>
-        
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="30"/>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <DockPanel Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="2" Background="Aquamarine">
+
+            <Menu DockPanel.Dock="Top" FontSize="20" Background="#FFDEFFBA" >
+
+                <MenuItem Header="_Tabla">
+
+                    <MenuItem Header="_Mostrar datos" />
+
+                    <MenuItem Header="_Insertar datos" />
+
+                    <MenuItem Header="_Modificar datos" />
+
+                    <MenuItem Header="_Borrar datos" />
+
+                    <Separator/>
+
+                    <MenuItem Header="_Salir" />
+
+                </MenuItem>
+
+                <MenuItem Header="_Informe">
+
+                    <MenuItem Header="_Generar informe">
+
+                    </MenuItem>
+
+                </MenuItem>
+
+            </Menu>
+        </DockPanel>
+
+        <Image Grid.Column="0" Grid.Row="1" Grid.RowSpan="2" Source="img/bank-01.jpeg" Margin="0,40,0,0" />
+
+        <TextBlock Grid.Column="1" Grid.Row="1"  FontSize="30" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center">Buscar animales</TextBlock>
+
+        <Grid Grid.Column="1" Grid.Row="2" Height="300">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="50"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+            <TextBlock Grid.Column="0" Grid.Row="0"  FontSize="20" FontWeight="Bold" VerticalAlignment="Center" HorizontalAlignment="Center">ID:</TextBlock>
+            <TextBox Name="boxID" Grid.Column="1" Grid.Row="0" Margin="0,5,30,0" TextAlignment="Center"></TextBox>
+
+            <TextBlock Grid.Column="0" Grid.Row="1"  FontSize="25" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center">Raza:</TextBlock>
+            <TextBox Name="boxRaza" Grid.Column="1" Grid.Row="1" Margin="0,5,30,5"></TextBox>
+
+            <StackPanel Grid.Column="0" Grid.Row="5" Grid.ColumnSpan="2" HorizontalAlignment="Center" VerticalAlignment="Center" >
+                <StackPanel Orientation="Horizontal"  HorizontalAlignment="Center" VerticalAlignment="Center">
+
+                    <Button Height="30" Width="150" Click="busAnimal" HorizontalAlignment="Center" VerticalAlignment="Center">Buscar</Button>
+                    <Button Height="30" Width="150" Margin="10,0,0,0" Click="btnCancelar">Cerrar</Button>
+
+                </StackPanel>
+            </StackPanel>
+
+        </Grid>
     </Grid>
+
 </Window>

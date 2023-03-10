@@ -26,7 +26,7 @@ namespace PruebaWPF
             InitializeComponent();
         }
 
-        private void agregarAnimal(Object sender, RoutedEventArgs e )
+        private void btnAgregarAnimal(Object sender, RoutedEventArgs e )
         {
             int id = int.Parse(boxID.Text);
             Animal a = MainWindow.Animales.Find(x => x.Id == id);
@@ -50,13 +50,13 @@ namespace PruebaWPF
                 Close();
              
             }
-          
-
-            Close();
-            
+                      
         }
 
-      
+        private void btnCancelar(object sender, RoutedEventArgs e)
+        {
+            Close();
+        }
 
     }
 }

@@ -43,7 +43,7 @@
                        
                     </MenuItem>
 
-                    <MenuItem Header="_Modificar datos" >
+                    <MenuItem Header="_Buscar animal" Click="btnBusAnimal" >
                    
                     </MenuItem>
 

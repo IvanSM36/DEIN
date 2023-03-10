@@ -38,5 +38,15 @@ namespace PruebaWPF
         public float Precio { get => precio; set => precio = value; }
         public int StockA { get => stockA; set => stockA = value; }
         public string Sexo { get => sexo; set => sexo = value; }
+
+        public String datosAnimal()
+        {
+            String datos;
+            datos = "ID: " + Id+ "\nRaza: " + Raza+ "\nSexo: " + Sexo+ "\nStock: " + StockA + "\nPrecio: " + Precio;
+            return datos;
+        }
+        
+
     }
+
 }

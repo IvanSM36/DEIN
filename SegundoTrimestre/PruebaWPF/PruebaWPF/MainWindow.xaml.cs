@@ -58,5 +58,11 @@ namespace PruebaWPF
             AgregarAnimales aa = new AgregarAnimales();
             aa.Show();
         }
+
+        private void btnBusAnimal(object sender, RoutedEventArgs e)
+        {
+            BuscarAnimal ba = new BuscarAnimal();
+            ba.Show();
+        }
     }
 }
